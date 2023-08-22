@@ -251,7 +251,7 @@ options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 
@@ -269,12 +269,12 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
         print(list_stock)
         if len(list_stock)%100==0:
             driver.quit()
-            driver=webdriver.Edge(options=options)
+            driver=webdriver.Chrome(options=options)
         bar()
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('hasil_osa_blibli_non_jabo_18_08.xlsx')
+df.to_excel('hasil_osa_blibli_non_jabo_22_08.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

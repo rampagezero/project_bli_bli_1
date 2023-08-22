@@ -184,5 +184,5 @@ with alive_bar(len(list_lazada),title='gathering data....') as bar:
         bar()
 import pandas as pd
 df=pd.DataFrame(data=[list_lazada,list_count]).T
-df.to_excel('rr_lazada_15_08.xlsx')
+df.to_excel('rr_lazada_21_08.xlsx')
 #nc_1_n1z

@@ -259,14 +259,39 @@ options.add_argument('--disable-notifications')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
-
+susulan=["https://www.blibli.com/p/gillette-pisau-cukur-wanita-daisy-plus-isi-2/pc--MTA-1010275",
+"https://www.blibli.com/p/pantene-anti-dandruff-shampoo-1200-ml-2-pcs/pc--MTA-6500740",
+"https://www.blibli.com/p/pantene-anti-dandruff-shampoo-1200-ml-3-pcs/pc--MTA-6500746",
+"https://www.blibli.com/p/pantene-anti-dandruff-shampoo-1200-ml/pc--MTA-6500643",
+"https://www.blibli.com/p/pantene-anti-dandruff-shampoo-400-ml-2-pcs/pc--MTA-3857158",
+"https://www.blibli.com/p/pantene-anti-dandruff-shampoo-900-ml/pc--MTA-0804416",
+"https://www.blibli.com/p/pantene-hair-fall-control-shampoo-900-ml-3-pcs/ps--PGG-18081-00240",
+"https://www.blibli.com/p/pantene-hair-fall-control-shampoo-900-ml/pc--MTA-0595901",
+"https://www.blibli.com/p/pantene-hairfall-shampoo-1200-ml-2-pcs/pc--MTA-6500669",
+"https://www.blibli.com/p/pantene-hairfall-shampoo-1200-ml/pc--MTA-6500615",
+"https://www.blibli.com/p/pantene-miracles-collagen-repair-daily-hair-supplement-for-damage-care-conditioner-150ml-x-2/ps--PGG-18081-01218",
+"https://www.blibli.com/p/pantene-miracles-collagen-repair-daily-hair-supplement-for-damage-care-conditioner-300ml-x-3/ps--PGG-18081-01222",
+"https://www.blibli.com/p/pantene-paket-shampoo-micellar-cleanse-and-hydrate-530-ml-x2-conditioner-530-ml/ps--PGG-18081-01140",
+"https://www.blibli.com/p/pantene-pro-v-gold-series-smooth-sleek-shampoo-450-ml/ps--PGG-18081-00884",
+"https://www.blibli.com/p/pantene-shampoo-anti-dandruff-400-ml/pc--MTA-3405746",
+"https://www.blibli.com/p/pantene-shampoo-anti-dandruff-900-ml-2-pcs/pc--MTA-1011260",
+"https://www.blibli.com/p/oral-b-stages-4-sikat-gigi-anak-3-pcs/ps--BLP-60063-00005",
+"https://www.blibli.com/p/oral-b-ultra-thin-pro-gum-care-sikat-gigi-1-pc/pc--MTA-2486869",
+"https://www.blibli.com/p/oral-b-all-rounder-herbal-sikat-gigi-3s-paket-isi-6/ps--PGG-18081-01108",
+"https://www.blibli.com/p/oral-b-sikat-gigi-anak-mickey-2-4-tahun-paket-isi-6/ps--BLP-60063-00012",
+"https://www.blibli.com/p/oral-b-tooth-and-gum-care-paste-paket-isi-3/pc--MTA-9774266",
+"https://www.blibli.com/p/pantene-anti-dandruff-shampoo-400-ml-3-pcs/pc--MTA-7555259",
+"https://www.blibli.com/p/pantene-hair-fall-control-shampoo-400-ml-3-pcs/pc--MTA-3857138",
+"https://www.blibli.com/p/pantene-miracles-keratin-glow-daily-hair-supplement-conditioner-150ml-3pcs/ps--PGG-18081-01362",
+"https://www.blibli.com/p/whs-sangobion-kids-100ml-bundle-3-bottles/ps--PGK-60021-00059",
+"https://www.blibli.com/p/whs-sangobion-vita-tonik-250ml-bundle-2-bottles/ps--PGK-60021-00066?ds=PGK-60021-00066-00001&source=BRAND_PAGE&sid=d4aa7d5bf165a57a&cnc=true&pickupPointCode=PP-3272702&pid=PGK-60021-00066&tag=2HD"]
 list_stock=[]
 list_count=[]
-with alive_bar(len(list_link),title='gathering data....') as bar:
-    for i in list_link:
+with alive_bar(len(susulan),title='gathering data....') as bar:
+    for i in susulan:
         driver.get(i)
         time.sleep(2)
         soup=BeautifulSoup(driver.page_source,'html.parser')
@@ -281,13 +306,13 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
         print(list_stock)
         if len(list_stock)%100==0:
             driver.quit()
-            driver=webdriver.Edge(options=options)
+            driver=webdriver.Chrome(options=options)
         bar()
 
 import pandas as pd
 driver.quit()
-df=pd.DataFrame(data=[list_link,list_stock,list_count]).T
-df.to_excel('hasil_rr_14_08.xlsx')
+df=pd.DataFrame(data=[susulan,list_stock,list_count]).T
+df.to_excel('hasil_rr_susulan_22_08.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

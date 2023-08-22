@@ -16,7 +16,10 @@ from lxml import etree
 from alive_progress import alive_bar
 path="C:\\Users\\andik\\Documents\\project\\Project Kantor\\geckodriver.exe"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3-pcs/pc--MTA-6500814",
 "https://www.blibli.com/p/head-shoulders-cool-menthol-shampoo-850-ml-3-pcs/pc--MTA-6500774",
 "https://www.blibli.com/p/olay-total-effects-whip-active-moisturizer-krim-50-g/ps--OLY-60021-00175",
@@ -65,7 +68,10 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/downy-anti-apek-pelembut-dan-pewangi-pakaian-720-ml-2-pcs-kemasan-refill/pc--MTA-4006491",
 "https://www.blibli.com/p/downy-allure-pewangi-dan-pelembut-pakaian-900-ml-refill-2-pcs/pc--MTA-7544732",
 "https://www.blibli.com/p/downy-antibacteria-pewangi-dan-pelembut-pakaian-720-ml-refill-4-pcs/pc--MTA-6061405",
+<<<<<<< HEAD
 "https://www.blibli.com/p/downy-perfume-sweet-heart-pewangi-pelembut-pakaian-pink-1500-ml-3-pcs-kemasan-refill/pc--MTA-3135126",
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/downy-allure-pewangi-dan-pelembut-pakaian-900-ml-kemasan-refill/pc--MTA-7544731",
 "https://www.blibli.com/p/downy-daring-pewangi-dan-pelembut-pakaian-720-ml-refill-4-pcs/pc--MTA-6061645",
 "https://www.blibli.com/p/downy-passion-pelembut-dan-pewangi-pakaian-merah-900-ml-3-pcs-refill/pc--MTA-4005779",
@@ -81,13 +87,20 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/downy-passion-refill-pelembut-pakaian-720-ml/pc--MTA-1359156",
 "https://www.blibli.com/p/downy-daring-pewangi-pelembut-pakaian-1-5-l-3-pcs-kemasan-refill/pc--MTA-3135117",
 "https://www.blibli.com/p/downy-allure-pewangi-dan-pelembut-pakaian-900-ml-refill-3-pcs/pc--MTA-7544733",
+<<<<<<< HEAD
 "https://www.blibli.com/p/downy-pelembut-pakaian-mystique-botol-900-ml/pc--MTA-0201552",
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/downy-daring-refill-pewangi-dan-pelembut-pakaian-1-5-l-2-pcs/pc--MTA-2278570",
 "https://www.blibli.com/p/downy-anti-apek-pelembut-dan-pewangi-pakaian-1500-ml-2-pcs-kemasan-refill/pc--MTA-4006467",
 "https://www.blibli.com/p/downy-pelembut-pakaian-passion-botol-900-ml/pc--MTA-0201556",
 "https://www.blibli.com/p/downy-anti-apek-pewangi-dan-pelembut-pakaian-720-ml-refill-4-pcs/pc--MTA-6061683",
 "https://www.blibli.com/p/downy-sunrise-fresh-pewangi-pakaian-780-ml-refill/pc--MTA-3021917",
+<<<<<<< HEAD
 "https://www.blibli.com/p/downy-floral-pink-pelembut-pewangi-pakaian-780-ml/pc--MTA-3068481",
+=======
+"https://www.blibli.com/p/downy-floral-pink-pewangi-dan-pelembut-pakaian-konsentrat-700-ml/ps--DOS-60031-00110",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/downy-floral-pink-pelembut-pewangi-pakaian-1-55-l/pc--MTA-2072752",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml/ps--DOS-60031-00406",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml-paket-isi-2/ps--DOS-60031-00407",
@@ -97,7 +110,10 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-1-45-l-paket-isi-3/ps--DOS-60031-00411",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-900-ml/ps--DOS-60031-00412",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-900-ml-paket-isi-2/ps--DOS-60031-00606",
+<<<<<<< HEAD
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-900-ml-paket-isi-3/ps--DOS-60031-00414",
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-1-45-l/ps--DOS-60031-00415",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-1-45-l-paket-isi-2/ps--DOS-60031-00416",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-1-45-l-paket-isi-3/ps--DOS-60031-00417",
@@ -110,7 +126,10 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/gillette-pisau-cukur-silet-goal-5-1-hangcard-isi-20-box/pc--MTA-9773283",
 "https://www.blibli.com/p/gillette-pisau-cukur-blue-2-plus-1-renceng-24-it/pc--MTA-9773247",
 "https://www.blibli.com/p/gillette-pisau-cukur-goal-2-1-renceng-24-it/pc--MTA-9773260",
+<<<<<<< HEAD
 "https://www.blibli.com/p/gillette-pisau-cukur-kepala-goyang-blue-2-flex-1-renceng-6-it/pc--MTA-9773271",
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/gillette-blue-2-disposable-razor-pisau-cukur-isi-10/pc--MTA-1387312",
 "https://www.blibli.com/p/gillette-blue-2-pivot-disposable-razor-pisau-cukur-isi-5/pc--MTA-1387316",
 "https://www.blibli.com/p/gillette-foamy-shave-cream-lemon-lime-175-gr/pc--MTA-1010475",
@@ -208,7 +227,10 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-regenerist-advanced-anti-ageing-revitalising-eye-serum/ps--OLY-60021-00015",
 "https://www.blibli.com/p/olay-regenerist-revitalising-hydration-uv-cream-50-g/ps--OLY-60021-00040",
 "https://www.blibli.com/p/olay-regenerist-revitalising-cream-cleanser-100gr/ps--OLY-60021-00013",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-anti-aging-pelembab-total-effects-day-cream-normal-7-in-1-20gr/ps--OLY-60021-00028",
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/olay-anti-aging-krim-pelembab-total-effects-serum-7-in-1-50ml/pc--MTA-0778049",
 "https://www.blibli.com/p/olay-total-effects-7-in-one-day-cream-normal-krim-pelembab-50g/ps--OLY-60021-00102",
 "https://www.blibli.com/p/olay-total-effects-7-in-one-foaming-cleanser-50-g/ps--OLY-60021-00043",
@@ -217,16 +239,26 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-set-perawatan-anti-aging-krim-pelembab/ps--OLY-60021-00286",
 "https://www.blibli.com/p/olay-anti-aging-pelembab-total-effects-day-cream-gentle-spf-15-7-in-1-50gr/ps--OLY-60021-00109",
 "https://www.blibli.com/p/olay-total-effects-7-in-one-day-cream-normal-spf-15-12-gr/ps--OLY-60021-00087",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-advanced-anti-aging-set-perawatan-kulit/pc--MTA-4621758",
 "https://www.blibli.com/p/olay-ritual-esens-anti-aging/ps--OLY-60021-00162",
 "https://www.blibli.com/p/olay-retinol-24-night-serum-essence-anti-aging-dengan-vitamin-b3-untuk-peremajaan-kulit-30ml/ps--OLY-60021-00302",
 "https://www.blibli.com/p/olay-set-perawatan-kulit-normal-skincare-cream-wajah-glowing-krim-wajah-bpom-krim-pelembab/pc--MTA-1664223",
+=======
+"https://www.blibli.com/p/olay-ritual-esens-anti-aging/ps--OLY-60021-00162",
+"https://www.blibli.com/p/olay-retinol-24-night-serum-essence-anti-aging-dengan-vitamin-b3-untuk-peremajaan-kulit-30ml/ps--OLY-60021-00302",
+"https://www.blibli.com/p/olay-total-effects-paket-hemat-perawatan-kulit-anti-aging-pembersih-wajah-dan-moisturizer-tanpa-serum/ps--OLY-60021-00068",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/olay-ritual-malam-anti-aging-krim-pelembab-sabun-muka/ps--OLY-60021-00069",
 "https://www.blibli.com/p/olay-whitening-pencerah-white-radiance-night-restoring-cream-50g/ps--OLY-60021-00053",
 "https://www.blibli.com/p/olay-anti-aging-krim-pelembab-total-effects-touch-of-foundation-bb-cream-spf-15-7-in-1-50gr/pc--UK-0022433",
 "https://www.blibli.com/p/olay-anti-aging-pelembab-total-effects-day-cream-normal-spf-15-7-in-1-50gr/ps--OLY-60021-00110",
 "https://www.blibli.com/p/olay-regenerist-advanced-anti-ageing-revitalising-night-cream-perawatan-wajah/ps--OLY-60021-00014",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-paket-serum-anti-aging-2-pcs/pc--MTA-5017406",
+=======
+"https://www.blibli.com/p/olay-regenerist-micro-sculpting-serum-perawatan-kulit-anti-aging-essence-dengan-vitamin-b3-set-isi-2-50-ml/ps--OLY-60021-00226",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/olay-regenerist-whip-active-moisturizer-uv-krim-pelembab-50-g/ps--OLY-60021-00288",
 "https://www.blibli.com/p/olay-anti-aging-pelembab-total-effects-day-cream-normal-spf-15-7-in-1-20gr/ps--OLY-60021-00029",
 "https://www.blibli.com/p/olay-white-radiance-whip-50-g/ps--OLY-60021-00177",
@@ -234,18 +266,27 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-white-radiance-light-perfecting-essence-30-ml/ps--OLY-60021-00170",
 "https://www.blibli.com/p/olay-white-radiance-whip-active-moisturizer-uv-krim-50-g/pc--MTA-6989618",
 "https://www.blibli.com/p/olay-set-perawatan-kulit-sensitif-skincare-cream-wajah-glowing-krim-wajah-bpom-krim-pelembab/pc--MTA-1664215",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-ritual-pelembab-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-krim-pelembab/pc--MTA-1501544",
 "https://www.blibli.com/p/olay-anti-aging-pelembab-total-effects-day-cream-gentle-7-in-1-50gr/ps--OLY-60021-00071",
 "https://www.blibli.com/p/olay-regenerist-whip-active-moisturizer-krim-50-g/ps--OLY-60021-00173",
 "https://www.blibli.com/p/olay-regenerist-ritual-pelembab-dan-serum-anti-aging-olay-reg-msc-day-cream-50-g-olay-reg-msc-night-cream-50-g-olay-reg-msc-serum-50-ml/pc--MTA-6393738",
+=======
+"https://www.blibli.com/p/olay-anti-aging-pelembab-total-effects-day-cream-gentle-7-in-1-50gr/ps--OLY-60021-00071",
+"https://www.blibli.com/p/olay-regenerist-whip-active-moisturizer-krim-50-g/ps--OLY-60021-00173",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/olay-regenerist-whip-active-moisturiser-krim-10-g/ps--OLY-60021-00174",
 "https://www.blibli.com/p/olay-regenerist-retinol-24-night-pelembab-eye-cream-15-ml/pc--MTA-8212871",
 "https://www.blibli.com/p/lebih-hemat-olay-ritual-krim-pelembab-pagi-malam-regenerist-niacinamide-masker-wajah-anti-aging-skin-care-sheet-mask/ps--OLY-60021-00428",
 "https://www.blibli.com/p/olay-ritual-serum-wajah-anti-aging-paket-perawatan-kulit/ps--OLY-60021-00082",
+<<<<<<< HEAD
 "https://www.blibli.com/p/lebih-hemat-olay-regenerist-ritual-set-lengkap-anti-aging/ps--OLY-60021-00340",
 "https://www.blibli.com/p/olay-anti-aging-set-perawatan-kulit/ps--OLY-60021-00211",
 "https://www.blibli.com/p/olay-total-effects-7-in-1-day-cream-dan-night-cream-paket-perawatan-kulit-pelembab-wajah-anti-aging-moisturizer-dan-krim-malam/ps--OLY-60021-00064",
 "https://www.blibli.com/p/olay-white-radiance-niacinamide-cica-super-serum-30-ml/ps--OLY-60021-00332",
+=======
+"https://www.blibli.com/p/olay-anti-aging-set-perawatan-kulit/ps--OLY-60021-00211",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/olay-white-radiance-niacinamide-hyaluronic-super-serum-30-ml/ps--OLY-60021-00330",
 "https://www.blibli.com/p/olay-retinol-24-night-moisturizer-pelembab-wajah-anti-aging-pencerah-wajah-dan-menghidrasi-kulit-50g/ps--OLY-60021-00303",
 "https://www.blibli.com/p/oral-b-all-rounder-herbal-sikat-gigi-1s/ps--PGG-18081-01104",
@@ -480,10 +521,15 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-luminous-niacinamide-vitamin-c-super-serum-brightening-skincare-15-ml/ps--OLY-60021-00557",
 "https://www.blibli.com/p/olay-luminous-recycled-pack-ritual-krim-pelembab-wajah-pagi-malam-pencerah-skincare/ps--OLY-60021-00489",
 "https://www.blibli.com/p/olay-regenerist-recycled-pack-ritual-krim-pelembab-pagi-malam-anti-aging-skincare/ps--OLY-60021-00488",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-total-effects-recycled-pack-set-lengkap-anti-aging-skincare-krim-wajah-serum-wajah-sabun-muka/ps--OLY-60021-00491",
 "https://www.blibli.com/p/limited-edition-olay-x-friends-regenerist-micro-sculpting-cream-pelembab-wajah-pagi-skincare-50-gr/ps--OLY-60021-00561",
 "https://www.blibli.com/p/limited-edition-olay-x-friends-luminous-light-perfecting-serum-pencerah-wajah-30-ml/ps--OLY-60021-00560",
 "https://www.blibli.com/p/limited-edition-olay-x-friends-regenerist-micro-sculpting-cream-pelembab-wajah-pagi-regenerist-micro-sculpting-cream-serum/ps--OLY-60021-00564",
+=======
+"https://www.blibli.com/p/limited-edition-olay-x-friends-regenerist-micro-sculpting-cream-pelembab-wajah-pagi-skincare-50-gr/ps--OLY-60021-00561",
+"https://www.blibli.com/p/limited-edition-olay-x-friends-luminous-light-perfecting-serum-pencerah-wajah-30-ml/ps--OLY-60021-00560",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/special-edition-olay-x-friends-olay-serum-wajah-luminous-30ml-krim-pelembab-retinol-anti-aging-skincare-50-gr/ps--OLY-60021-00565",
 "https://www.blibli.com/p/special-edition-olay-x-friends-olay-serum-wajah-luminous-30ml-krim-pelembab-pencerah-niacinamide-vit-c-skincare-50-gr/ps--OLY-60021-00566",
 "https://www.blibli.com/p/olay-regenerist-antioxidan-moisturizer-krim-50-gr/ps--OLY-60021-00569",
@@ -494,6 +540,47 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-antioxidant-moisturizer-50gr-skin-barrier-cream-anti-aging-retinol-serum-30ml-essence-anti-aging-skin-care/ps--OLY-60021-00573",
 "https://www.blibli.com/p/olay-antioxidant-serum-30ml-essence-anti-aging-collagen-serum-30ml-essence-anti-aging-skin-care/ps--OLY-60021-00576",
 "https://www.blibli.com/p/olay-antioxidant-serum-30ml-essence-anti-aging-niacinamide-aha-serum-30ml-essence-pencerah-skin-care/ps--OLY-60021-00574",
+<<<<<<< HEAD
+=======
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-550-ml-refill/ps--DOS-60031-00559",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-550-ml-refill-isi-3-pcs/ps--DOS-60031-00561",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-900-ml-refill-isi-3-pcs/ps--DOS-60031-00565",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-900-ml-refill-isi-2-pcs/ps--DOS-60031-00564",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-900-ml-refill/ps--DOS-60031-00563",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-550-ml-refill-isi-4-pcs/ps--DOS-60031-00562",
+"https://www.blibli.com/p/pantene-micellar-detox-moisturizer-shampoo-300-ml-conditioner-300-ml/ps--PGG-18081-01482",
+"https://www.blibli.com/p/baru-gillette-flexi-vibe-1-gagang-pisau-cukur-1-pisau-cukur-refill-isi-ulang/ps--PGG-18081-01504",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-550-ml-refill-isi-2-pcs/ps--DOS-60031-00560",
+"https://www.blibli.com/p/pantene-micellar-detox-moisturizer-shampoo-530-ml-conditioner-530-ml/ps--PGG-18081-01483",
+"https://www.blibli.com/p/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-pure-love-900-ml-refill-isi-4-pcs/ps--DOS-60031-00566",
+"https://www.blibli.com/p/baru-gillette-flexi-vibe-2-pisau-cukur-refill-isi-ulang/ps--PGG-18081-01505",
+"https://www.blibli.com/p/pantene-micellar-detox-moisturizer-shampoo-300-ml/ps--PGG-18081-01481",
+"https://www.blibli.com/p/baru-gillette-flexi-vibe-1-gagang-pisau-cukur-3-pisau-cukur-refill-isi-ulang-eksklusif-ecommerce/ps--PGG-18081-01502",
+"https://www.blibli.com/p/pantene-hitam-glow-shampoo-750-ml/ps--PGG-18081-01473",
+"https://www.blibli.com/p/pantene-micellar-detox-moisturizer-shampoo-530-ml/ps--PGG-18081-01480",
+"https://www.blibli.com/p/pantene-micellar-detox-moisturizer-conditioner-300-ml/ps--PGG-18081-01478",
+"https://www.blibli.com/p/pantene-hitam-glow-shampoo-750-ml-paket-isi-2/ps--PGG-18081-01475",
+"https://www.blibli.com/p/baru-gillette-flexi-vibe-5-pisau-cukur-refill-isi-ulang-eksklusif-ecommerce/ps--PGG-18081-01503",
+"https://www.blibli.com/p/pantene-micellar-detox-moisturizer-conditioner-530-ml/ps--PGG-18081-01479",
+"https://www.blibli.com/p/pantene-hitam-glow-conditioner-290-ml/ps--PGG-18081-01474",
+"https://www.blibli.com/p/pantene-hitam-glow-shampoo-750-ml-paket-isi-3/ps--PGG-18081-01476",
+"https://www.blibli.com/p/pantene-hitam-glow-conditioner-290-ml-paket-isi-2/ps--PGG-18081-01477",
+"https://www.blibli.com/p/rejoice-rich-soft-shampoo-450-ml/ps--PGG-18081-01484",
+"https://www.blibli.com/p/rejoice-anti-dandruff-3-in-1-shampoo-450-ml/ps--PGG-18081-01485",
+"https://www.blibli.com/p/rejoice-jeju-rose-shampoo-450-ml/ps--PGG-18081-01486",
+"https://www.blibli.com/p/rejoice-rich-soft-shampoo-450-ml-paket-isi-2/ps--PGG-18081-01487",
+"https://www.blibli.com/p/rejoice-rich-soft-shampoo-450-ml-paket-isi-3/ps--PGG-18081-01488",
+"https://www.blibli.com/p/rejoice-anti-dandruff-3-in-1-shampoo-450-ml-paket-isi-2/ps--PGG-18081-01489",
+"https://www.blibli.com/p/rejoice-anti-dandruff-3-in-1-shampoo-450-ml-paket-isi-3/ps--PGG-18081-01490",
+"https://www.blibli.com/p/rejoice-jeju-rose-shampoo-450-ml-paket-isi-2/ps--PGG-18081-01491",
+"https://www.blibli.com/p/rejoice-jeju-rose-shampoo-450-ml-paket-isi-3/ps--PGG-18081-01492",
+"https://www.blibli.com/p/herbal-essences-argan-oil-of-morocco-conditioner-240-ml/ps--PGG-18081-01493",
+"https://www.blibli.com/p/herbal-essences-argan-oil-of-morocco-shampoo-240-ml/ps--PGG-18081-01495",
+"https://www.blibli.com/p/herbal-essences-white-strawberry-mint-shampoo-240-ml/ps--PGG-18081-01496",
+"https://www.blibli.com/p/herbal-essences-argan-oil-of-morocco-shampoo-600-ml/ps--PGG-18081-01498",
+"https://www.blibli.com/p/herbal-essences-argan-oil-of-morocco-conditioner-600-ml/ps--PGG-18081-01497",
+"https://www.blibli.com/p/lebih-hemat-herbal-essences-argan-oil-of-morocco-of-morocco-shampoo-600-ml-conditioner-600-ml/ps--PGG-18081-01501",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/downy-mystique-refill-pewangi-dan-pelembut-pakaian-konsentrat-1-35-l-3-pcs/ps--DOS-60031-00488",
 "https://www.blibli.com/p/downy-sunrise-fresh-pewangi-dan-pelembut-pakaian-konsentrat-biru-1-4-l-refill-3-pcs/ps--DOS-60031-00500",
 "https://www.blibli.com/p/downy-pewangi-dan-pelembut-pakaian-konsentrat-french-lavender-900-ml-paket-isi-3/ps--DOS-60031-00522",
@@ -568,10 +655,15 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/pantene-pro-v-gold-series-smooth-sleek-shampoo-270-ml-conditioner-190-ml/ps--PGG-18081-01400?ds=PGG-18081-01400-00001&source=MERCHANT_PAGE&sid=d239101c3934a37c&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01400",
 "https://www.blibli.com/p/pantene-conditioner-micellar-detox-and-purify-300-ml/ps--PGG-18081-01231?ds=PGG-18081-01231-00001&source=MERCHANT_PAGE&sid=2689bbc06f309e42&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01231",
 "https://www.blibli.com/p/pantene-miracles-keratin-glow-daily-hair-supplement-conditioner-300ml/ps--PGG-18081-01352?ds=PGG-18081-01352-00001&source=MERCHANT_PAGE&sid=f889b315526a0d62&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01352",
+<<<<<<< HEAD
 "https://www.blibli.com/p/pantene-miracles-collagen-repair-weekly-hair-supplement-for-damage-care-hair-mask-20-ml/ps--PGG-18081-01223?ds=PGG-18081-01223-00001&source=MERCHANT_PAGE&sid=77849d76f37a0eea&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01223",
 "https://www.blibli.com/p/pantene-paket-conditioner-micellar-cleanse-and-hydrate-530-ml-isi-2/ps--PGG-18081-01146?ds=PGG-18081-01146-00001&source=MERCHANT_PAGE&sid=36389241427708cb&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01146",
 "https://www.blibli.com/p/pantene-shampoo-micellar-detox-and-purify-530-ml-x2/ps--PGG-18081-01241?ds=PGG-18081-01241-00001&source=MERCHANT_PAGE&sid=37f4b1bbb1723766&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01241",
 "https://www.blibli.com/p/pantene-miracles-biotin-strength-weekly-hair-supplement-for-hairfall-control-hair-mask-20-ml/ps--PGG-18081-01214?ds=PGG-18081-01214-00001&source=MERCHANT_PAGE&sid=8544a973ecd10ac3&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01214",
+=======
+"https://www.blibli.com/p/pantene-paket-conditioner-micellar-cleanse-and-hydrate-530-ml-isi-2/ps--PGG-18081-01146?ds=PGG-18081-01146-00001&source=MERCHANT_PAGE&sid=36389241427708cb&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01146",
+"https://www.blibli.com/p/pantene-shampoo-micellar-detox-and-purify-530-ml-x2/ps--PGG-18081-01241?ds=PGG-18081-01241-00001&source=MERCHANT_PAGE&sid=37f4b1bbb1723766&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01241",
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/pantene-shampoo-total-damage-care-400-ml/ps--PGG-18081-00109?ds=PGG-18081-00109-00001&source=MERCHANT_PAGE&sid=505e2d31d80838ec&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-00109",
 "https://www.blibli.com/p/head-shoulders-cool-menthol-shampoo-400-ml-x-3-pcs/ps--PGG-18081-01546?ds=PGG-18081-01546-00001&source=MERCHANT_PAGE&sid=55f89ec659f78cc0&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-01546&logistics=SAME_DAY&logistics=INSTANT&logistics=HOUR_DEL",
 "https://www.blibli.com/p/head-shoulders-cool-menthol-shampoo-anti-dandruff-anti-ketombe-400-ml-2-pcs/ps--PGG-18081-00919?ds=PGG-18081-00919-00001&source=MERCHANT_PAGE&sid=ef825e776fb2830c&cnc=true&pickupPointCode=PGG-18081-002&pid=PGG-18081-00919",
@@ -587,7 +679,10 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-luminous-niacinamide-aha-moisturizer-dan-serum-paket-skincare-pelembab-dan-serum-untuk-mencerahkan-kulit/ps--OLY-60021-00447?ds=OLY-60021-00447-00001&source=MERCHANT_PAGE&sid=351c140e328621cf&metaData=Sa0jw%20XIAzQDKlCuUgCF1n01AbUE23o9qKNqdHR3HAeDQu4xIBG%20MWRYoohvC5Q5Vfpio0v83fyImViRCUjYcP1ycHsD0Gv3pU06hp78fX4FIV3TYG4eZlaHQvtHp2GSlg9DYcGal6Nha%200m5BO3EVs5xRNvtu%2FP670hqlbIxg4rvl0KBXJKdKcWce8lHB5y&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00447",
 "https://www.blibli.com/p/lebih-hemat-olay-set-lengkap-luminous-niacinamide-vitamin-c-brightening-skin-care-krim-wajah-50gr-serum-wajah-30ml/ps--OLY-60021-00510?ds=OLY-60021-00510-00001&source=MERCHANT_PAGE&sid=47a2826657dee27e&cnc=true&pickupPointCode=PP-3035142&pid=OLY-60021-00510",
 "https://www.blibli.com/p/olay-serum-wajah-luminous-30ml-krim-pelembab-regenerist-anti-aging-skincare-50g-special-edition-keith-haring/ps--OLY-60021-00379?ds=OLY-60021-00379-00001&source=MERCHANT_PAGE&sid=6766389d5a061178&cnc=true&pickupPointCode=PP-3035142&pid=OLY-60021-00379",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-krim-pelembab-pagi-regenerist-micro-sculpting-anti-aging-day-cream-skincare-50g-special-edition-keith-haring-free-white-pouch/ps--OLY-60021-00406?ds=OLY-60021-00406-00001&source=MERCHANT_PAGE&sid=c5f5473b51ef610c&metaData=Sa0jw%20XIAzQDKlCuUgCF1iYI2BDHujiFy09q4%2FuHexUKJQqrK5MLFrC4m9rnfie3V6xq99GcSyZY1Sf3L0gZM81tC%2Fd72O3xovd3W%2FbG70PfM%2F%2FeNdJUCw07oJWQqIFs%2FCwvdFssFoOKOSDSYO3t%20S4XDpl5vx3UqWI57oYVq3oqHx8YcajYyD7fOGJgHLBl&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00406",
+=======
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 "https://www.blibli.com/p/olay-luminous-niacinamide-aha-moisturizer-krim-untuk-mencerahkan-kulit-pelembab-wajah-non-comedogenic-50g/ps--OLY-60021-00445?ds=OLY-60021-00445-00001&source=MERCHANT_PAGE&sid=98fa6b12bffa40f8&metaData=Sa0jw%20XIAzQDKlCuUgCF1kQOOYRkVKZA%20wI5vUVNxaHTA8JEpjbBowS8vKptaOByVfpio0v83fyImViRCUjYcP1ycHsD0Gv3pU06hp78fX4FIV3TYG4eZlaHQvtHp2GSlg9DYcGal6Nha%200m5BO3EVs5xRNvtu%2FP670hqlbIxg4rvl0KBXJKdKcWce8lHB5y&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00445",
 "https://www.blibli.com/p/olay-luminous-niacinamide-aha-super-serum-brightening-skin-care-30ml/ps--OLY-60021-00446?ds=OLY-60021-00446-00001&source=MERCHANT_PAGE&sid=2b2734eb36c11902&cnc=true&pickupPointCode=PP-3035142&pid=OLY-60021-00446",
 "https://www.blibli.com/p/olay-regenerist-micro-sculpting-krim-malam-10-g/ps--OLY-60021-00319?ds=OLY-60021-00319-00001&source=MERCHANT_PAGE&sid=83075163e57de3ed&cnc=true&pickupPointCode=PP-3035142&pid=OLY-60021-00319",
@@ -599,6 +694,7 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-ritual-serum-luminous-niacinamide-aha-30ml-krim-pelembab-regenerist-anti-aging-skin-care-50g-free-olay-face-brush/ps--OLY-60021-00465?ds=OLY-60021-00465-00001&source=MERCHANT_PAGE&sid=f94006f47bd3df55&metaData=Sa0jw%20XIAzQDKlCuUgCF1u4y3sWx39B%20Ux7PplSxA7IIOTq0ew5rPcj8GU3KrhMyV6xq99GcSyZY1Sf3L0gZM81tC%2Fd72O3xovd3W%2FbG70PfM%2F%2FeNdJUCw07oJWQqIFs%2FCwvdFssFoOKOSDSYO3t%20S4XDpl5vx3UqWI57oYVq3oqHx8YcajYyD7fOGJgHLBl&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00465",
 "https://www.blibli.com/p/olay-serum-wajah-luminous-30ml-krim-pelembab-regenerist-anti-aging-skincare-50g-special-edition-keith-haring/ps--OLY-60021-00379?ds=OLY-60021-00379-00001&source=MERCHANT_PAGE&sid=ac556ac65c749181&metaData=Sa0jw%20XIAzQDKlCuUgCF1kL2FIqBQc%20lQodUj2tZPWElwZVbd8jDDQKxSE7oHastV6xq99GcSyZY1Sf3L0gZM81tC%2Fd72O3xovd3W%2FbG70PfM%2F%2FeNdJUCw07oJWQqIFs%2FCwvdFssFoOKOSDSYO3t%20S4XDpl5vx3UqWI57oYVq3oqHx8YcajYyD7fOGJgHLBl&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00379",
 "https://www.blibli.com/p/olay-serum-wajah-luminous-light-perfecting-essence-pencerah-skincare-30ml-special-edition-keith-haring-free-white-pouch/ps--OLY-60021-00405?ds=OLY-60021-00405-00001&source=MERCHANT_PAGE&sid=314bf9e6275c2534&cnc=true&pickupPointCode=PP-3035142&pid=OLY-60021-00405",
+<<<<<<< HEAD
 "https://www.blibli.com/p/olay-serum-wajah-white-radiance-light-perfecting-essence-pencerah-skincare-limited-edition-30-ml/ps--OLY-60021-00339?ds=OLY-60021-00339-00001&source=MERCHANT_PAGE&sid=4ded3a92e9665915&metaData=Sa0jw%20XIAzQDKlCuUgCF1rcyVtUWHSEVrpxXbMqfGD60k3%20ABV%2FDH2PCwDL5hyNHVfpio0v83fyImViRCUjYcP1ycHsD0Gv3pU06hp78fX4FIV3TYG4eZlaHQvtHp2GSlg9DYcGal6Nha%200m5BO3EVOU8ezsgx0acDP4UsfkJzIg9%2FNtdYisrklknqHBLV61&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00339"
 ]
 list_lazada=["https://www.lazada.co.id/products/ambipur-car-lavender-2ml-i1441220409-s2658016796.html",
@@ -1933,6 +2029,11 @@ list_tokopedia=["https://tokopedia.com/pgofficialstore/vicks-balsem-vaporub-10-g
 "https://tokopedia.com/pgofficialstore/herbal-essences-tea-tree-oil-400ml-shampoo",
 "https://tokopedia.com/pgofficialstore/herbal-essences-tea-tree-oil-400ml-shampoo-paket-isi-2",
 "https://tokopedia.com/pgofficialstore/herbal-essences-white-strawberry-sweet-mint-shampoo-condi-240-ml"]
+=======
+"https://www.blibli.com/p/olay-serum-wajah-white-radiance-light-perfecting-essence-pencerah-skincare-limited-edition-30-ml/ps--OLY-60021-00339?ds=OLY-60021-00339-00001&source=MERCHANT_PAGE&sid=4ded3a92e9665915&metaData=Sa0jw%20XIAzQDKlCuUgCF1rcyVtUWHSEVrpxXbMqfGD60k3%20ABV%2FDH2PCwDL5hyNHVfpio0v83fyImViRCUjYcP1ycHsD0Gv3pU06hp78fX4FIV3TYG4eZlaHQvtHp2GSlg9DYcGal6Nha%200m5BO3EVOU8ezsgx0acDP4UsfkJzIg9%2FNtdYisrklknqHBLV61&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00339"]
+
+# import time
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
 from lxml import etree
 import requests
 options_1 =Options()
@@ -1948,11 +2049,16 @@ list_jumlah_review=[]
 with alive_bar(len(list_link),title='gathering data....') as bar:
     for i in list_link[0:10]:
         # driver = webdriver.Firefox(service=Service(r'C:\Users\andik\Documents\project\Project Kantor\geckodriver.exe'),options=options_1)
+<<<<<<< HEAD
         driver=webdriver.Firefox(service=Service(r'C:\Users\BIJKT-ANDIKA\Documents\Python Scripts\project_scraping_blibli-Master\geckodriver.exe'),options=options_1)
+=======
+        driver=webdriver.Firefox(options=options_1)
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
         driver.set_window_size(360,640)
         driver.get(i)
         time.sleep(2)
         soup=BeautifulSoup(driver.page_source,'lxml')
+<<<<<<< HEAD
         print(soup)
         try:
             x=soup.find_all('div',attrs={'class':'text'})[0].text
@@ -1964,6 +2070,17 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
         # rating=soup.find_all('span',attrs={'class':"score-average"})[0].text
         # list_rating.append(rating)
         # list_jumlah_review.append(jumlah)
+=======
+        try:
+            x=soup.find_all('div',attrs={'class':'text'})[0].text
+            list_hasil.append(1)
+        except:
+            list_hasil.append(0)
+        rating=soup.find_all('div',attrs={'class':"product-rating__decimal"})[0].text
+        jumlah=soup.find_all('div',attrs={'class':"product-rating__count"})[0].text
+        list_rating.append(rating)
+        list_jumlah_review.append(jumlah)
+>>>>>>> 69cdcec80fc08c9af3c1c163728d565f7be2f5e5
         print(list_hasil)
         # if len(list_hasil)%10==0:
         #     print(list_hasil)

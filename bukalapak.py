@@ -912,12 +912,12 @@ options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 list_stock=[]
-with alive_bar(len(bl_caca),title='gathering data....') as bar:
-    for i in bl_caca:
+with alive_bar(len(bukalapak_link),title='gathering data....') as bar:
+    for i in bukalapak_link:
         driver.get(i)
         time.sleep(1)
         soup=BeautifulSoup(driver.page_source,'html.parser')
@@ -930,13 +930,13 @@ with alive_bar(len(bl_caca),title='gathering data....') as bar:
         if len(list_stock)%100==0:
             driver.quit()
             print(list_stock)
-            driver=webdriver.Edge(options=options)
+            driver=webdriver.Chrome(options=options)
         bar()
 with alive_bar(len(list_stock),title='validating data....') as bar:
     for i,j in enumerate(list_stock):
         if j==0:
-            print(bl_caca[i])
-            driver.get(bl_caca[i])
+            print(bukalapak_link[i])
+            driver.get(bukalapak_link[i])
             time.sleep(1)
             soup=BeautifulSoup(driver.page_source,'html.parser')
             try:    
@@ -947,5 +947,5 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
         bar()
 import pandas as pd
 driver.quit()
-df=pd.DataFrame(data=[bl_caca,list_stock]).T
-df.to_excel('bukalapak_caca_16_08.xlsx')
+df=pd.DataFrame(data=[bukalapak_link,list_stock]).T
+df.to_excel('bukalapak_22_08.xlsx')

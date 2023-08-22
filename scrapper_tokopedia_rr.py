@@ -280,6 +280,87 @@ list_tokopedia=["https://tokopedia.com/pgofficialstore/lebih-hemat-olay-regeneri
 "https://tokopedia.com/pgofficialstore/whisper-pembalut-wanita-regular-flow-10-s",
 "https://tokopedia.com/pgofficialstore/whisper-pembalut-wanita-regular-flow-20-s",
 "https://tokopedia.com/pgofficialstore/whisper-pembalut-wanita-regular-flow-40-s"]
+susulan=["https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-clean-and-balanced-400-ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-cool-menthol-400-ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-cool-menthol-850-ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-lemon-fresh-400ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-smooth-and-silky-400-ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-supreme-moisture-480-ml",
+"https://tokopedia.com/pgofficialstore/herbal-essences-argan-oil-shampoo-conditioner-400-ml",
+"https://tokopedia.com/pgofficialstore/herbal-essences-argan-oil-shampoo-x2-conditioner",
+"https://tokopedia.com/pgofficialstore/herbal-essences-coconut-milk-shampoo-x2-conditioner",
+"https://tokopedia.com/pgofficialstore/herbal-essences-golden-moringa-shampoo-conditioner-400-ml",
+"https://tokopedia.com/pgofficialstore/herbal-essences-rosemary-herbs-shampoo-conditioner-400-ml",
+"https://tokopedia.com/pgofficialstore/herbal-essences-shampoo-paket-4-rosemary-grapefruit-strawberry",
+"https://tokopedia.com/pgofficialstore/herbal-essences-white-grapefruit-mosa-mint-shampoo-conditioner",
+"https://tokopedia.com/pgofficialstore/lebih-hemat-olay-set-perwatan-anti-aging-gentle",
+"https://tokopedia.com/pgofficialstore/olay-base-pink-moisturising-cream-50gr",
+"https://tokopedia.com/pgofficialstore/olay-luminous-night-restoring-cream-50gr-white-radiance",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-micro-sculpting-cream-50gr",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-micro-sculpting-serum-50ml",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-revitalising-cream-cleanser-100gr",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-revitalising-hydration-uv-cream-50g",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-revitalising-night-cream-50gr",
+"https://tokopedia.com/pgofficialstore/olay-total-effects-7in1-day-cream-normal-50gr",
+"https://tokopedia.com/pgofficialstore/oral-b-benang-gigi-essential-floss-50-m",
+"https://tokopedia.com/pgofficialstore/oral-b-benang-gigi-satin-floss-50-m",
+"https://tokopedia.com/pgofficialstore/oral-b-sikat-gigi-all-rounder-herbal-3s",
+"https://tokopedia.com/pgofficialstore/pantene-conditioner-gold-series-smooth-and-sleek-320ml",
+"https://tokopedia.com/pgofficialstore/pantene-conditioner-hair-fall-control-290-ml",
+"https://tokopedia.com/pgofficialstore/pantene-conditioner-perfect-on-tanpa-bilas-40-ml",
+"https://tokopedia.com/pgofficialstore/pantene-conditioner-smooth-silky-290-ml",
+"https://tokopedia.com/pgofficialstore/pantene-micellar-detox-and-puri-300ml-shampoo-conditioner",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-anti-dandruff-1200-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-anti-dandruff-400-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-anti-dandruff-900ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-anti-dandruff-900ml-paket-isi-3",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-anti-lepek-480-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-anti-lepek-900ml-paket-isi-3",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-aqua-pure-750-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-hair-fall-control-1200-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-hair-fall-control-1800-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-hair-fall-control-400-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-long-black-400-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-micellar-detox-and-purify-300-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-nature-care-fullness-life-290-ml",
+"https://tokopedia.com/pgofficialstore/pantene-shampoo-smooth-silky-400-ml",
+"https://tokopedia.com/pgofficialstore/rejoice-conditioner-rich-halus-lembut-150-ml",
+"https://tokopedia.com/pgofficialstore/rejoice-conditioner-rich-halus-lembut-320-ml",
+"https://tokopedia.com/pgofficialstore/rejoice-jeju-rose-shampoo-340ml-paket-isi-3",
+"https://tokopedia.com/pgofficialstore/rejoice-shampoo-anti-hairfall-340-ml",
+"https://tokopedia.com/pgofficialstore/rejoice-shampoo-moisture-smooth-600ml",
+"https://tokopedia.com/pgofficialstore/rejoice-shampoo-rich-340ml-paket-isi-2",
+"https://tokopedia.com/pgofficialstore/rejoice-shampoo-rich-halus-lembut-600-ml",
+"https://tokopedia.com/pgofficialstore/vicks-balsem-inhaler-keychain-0-5ml",
+"https://tokopedia.com/pgofficialstore/vicks-balsem-vaporub-10-gram",
+"https://tokopedia.com/pgofficialstore/vicks-balsem-vaporub-25-gram",
+"https://tokopedia.com/pgofficialstore/vicks-balsem-vaporub-50-gram",
+"https://tokopedia.com/pgofficialstore/ambipur-pengharum-mobil-lavender-comfort-clips-2-ml",
+"https://tokopedia.com/pgofficialstore/ambipur-pengharum-mobil-aqua-refill-7-5-ml",
+"https://tokopedia.com/pgofficialstore/ambipur-pengharum-mobil-vanilla-bliss-clips-2-ml",
+"https://tokopedia.com/pgofficialstore/ambipur-pengharum-mobil-fresh-and-cool-7-5ml",
+"https://tokopedia.com/pgofficialstore/ambipur-pengharum-mobil-tobacco-7-5-ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-supreme-anti-hairfall-480ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-itch-care-400ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-anti-apek-400ml",
+"https://tokopedia.com/pgofficialstore/head-shoulders-shampoo-anti-hairfall-300-ml",
+"https://tokopedia.com/pgofficialstore/herbal-essences-white-strawberry-sweet-mint-shampoo-conditioner",
+"https://tokopedia.com/pgofficialstore/herbal-essences-coconut-milk-shampoo-conditioner-400-ml",
+"https://tokopedia.com/pgofficialstore/herbal-essences-strawberry-shampoo-x2-conditioner",
+"https://tokopedia.com/pgofficialstore/paket-hemat-olay-ritual-pelembab-anti-aging",
+"https://tokopedia.com/pgofficialstore/olay-luminous-niacinamide-aha-moisturizer-serum-paket-skincare",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-peptide-24-collagen-peptide-serum",
+"https://tokopedia.com/pgofficialstore/olay-regenerist-whip-active-moisturizer-krim-pelembab-50g",
+"https://tokopedia.com/pgofficialstore/olay-base-body-lotion-75ml",
+"https://tokopedia.com/pgofficialstore/pantene-conditioner-miracles-keratin-glowdaily-hair-supplement-300mlx3",
+"https://tokopedia.com/pgofficialstore/rejoice-jeju-rose-shampoo-340ml-paket-isi-2",
+"https://tokopedia.com/pgofficialstore/rejoice-jeju-rose-shampoo-340ml",
+"https://tokopedia.com/pgofficialstore/sangobion-kids-100ml-vitamin-dan-suplemen-zat-besi",
+"https://tokopedia.com/pgofficialstore/gillette-venus-alat-cukur-wanita-smooth-sensitive-razor",
+"https://tokopedia.com/pgofficialstore/gilllette-venus-alat-cukur-wanita-extra-smooth-razor",
+"https://tokopedia.com/pgofficialstore/whisper-pembalut-wanita-regular-flow-10-s",
+"https://tokopedia.com/pgofficialstore/whisper-pembalut-wanita-regular-flow-20-s",
+"https://tokopedia.com/pgofficialstore/whisper-pembalut-wanita-regular-flow-40-s"]
 from bs4 import BeautifulSoup 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -300,14 +381,14 @@ options.add_argument('--disable-notifications')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 
 list_rating=[]
 list_count=[]
-with alive_bar(len(list_tokopedia),title='gathering data....') as bar:
-    for i in list_tokopedia:
+with alive_bar(len(susulan),title='gathering data....') as bar:
+    for i in susulan:
         driver.get(i)
         soup=BeautifulSoup(driver.page_source,'html.parser')
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'p.css-vni7t6-unf-heading:nth-child(3) > span:nth-child(2)')))
@@ -318,5 +399,5 @@ with alive_bar(len(list_tokopedia),title='gathering data....') as bar:
         print(list_rating)
         bar()
 import pandas as pd
-df=pd.DataFrame(data=[list_tokopedia,list_rating,list_count]).T
-df.to_excel('w3_Tokped_rr.xlsx')
+df=pd.DataFrame(data=[susulan,list_rating,list_count]).T
+df.to_excel('w4_Tokped_rr_susulan.xlsx')

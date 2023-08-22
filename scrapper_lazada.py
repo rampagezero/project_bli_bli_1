@@ -601,27 +601,36 @@ list_lazada=["https://www.lazada.co.id/products/ambipur-car-lavender-2ml-i144122
 "https://www.lazada.co.id/products/gillette-mach-3-alat-cukur-razor-pisau-cukur-isi-ulang-i159982155-s181784484.html",
 "https://www.lazada.co.id/products/oral-b-sikat-gigi-all-rounder-123-medium-3s-i5847660789-s11308394175.html",
 "https://www.lazada.co.id/products/olay-total-effects-7in1-day-cream-normal-anti-aging-krim-pencerah-wajah-perawatan-kulit-50g-paket-isi-2-i7570488273.html?spm=a2o4j.searchlist.list.1.40072aa18UmM1T"]
-list_lazada_susulan=["https://www.lazada.co.id/products/ambipur-car-pacific-air-refill-75ml-i1441218399-s2658056078.html",
-"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-kondisioner-400-ml-i633172146-s881120603.html",
-"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-shampo-400-ml-i633094935-s881058150.html",
-"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-shampo-400-ml-x2-i637638323-s886564742.html",
-"https://www.lazada.co.id/products/herbal-essences-biorenew-volume-white-grapefruit-and-mosa-mint-shampoo-400-ml-conditioner-400-ml-i3412450667-s5857850301.html",
-"https://www.lazada.co.id/products/herbal-essences-kondisioner-colour-me-happy-300-ml-i954988120-s1439570191.html",
-"https://www.lazada.co.id/products/herbal-essences-kondisioner-hello-hydration-300-ml-i955756275-s1440458740.html",
-"https://www.lazada.co.id/products/herbal-essences-kondisioner-moroccan-my-shine-300-ml-i955986887-s1440766077.html",
-"https://www.lazada.co.id/products/herbal-essences-shampo-colour-me-happy-300-ml-i955534843-s1440242392.html",
-"https://www.lazada.co.id/products/herbal-essences-shampo-colour-me-happy-300-ml-pack-of-2-i955646134-s1440316078.html",
-"https://www.lazada.co.id/products/pantene-conditioner-miracles-collagen-repair-daily-hair-supplement-for-damage-care-150ml-i5786986479-s11243976831.html",
-"https://www.lazada.co.id/products/pantene-conditioner-miracles-collagen-repair-daily-hair-supplement-for-damage-care-300ml-i5787016079-s11244002745.html",
-"https://www.lazada.co.id/products/pantene-hair-mask-miracles-collagen-repair-weekly-hair-supplement-for-damage-care-20ml-i5787004580-s11244058053.html",
-"https://www.lazada.co.id/products/pantene-micellar-detox-and-purify-paket-shampoo-300-ml-x2-conditioner-300-ml-i5716540053-s11167746635.html",
-"https://www.lazada.co.id/products/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-900ml-laundry-softener-paket-isi-4-i7065502097-s13353008913.html",
-"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-1-gagang-pisau-cukur-3-pisau-cukur-refill-isi-ulang-eksklusif-ecommerce-i7017540134-s13270842775.html",
-"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-5-pisau-cukur-refill-isi-ulang-eksklusif-ecommerce-i7017590029-s13270876955.html",
-"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-1-gagang-pisau-cukur-1-pisau-cukur-refill-isi-ulang-i7017586788-s13271006093.html",
-"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-2-pisau-cukur-refill-isi-ulang-i7017608904-s13271032499.html",
-"https://www.lazada.co.id/products/olay-anti-aging-pelembab-total-effects-touch-of-foundation-bb-cream-spf-15-7-in-1-50g-skincarecream-wajah-glowingkrim-wajah-bpom-i159962240-s181759620.html",
-"https://www.lazada.co.id/products/downy-sunrise-fresh-refill-16l-pack-of-2-i160036237-s181904933.html"]
+list_lazada_susulan=["https://www.lazada.co.id/products/oral-b-sikat-gigi-pro-health-clinical-pro-flex-soft-2s-paket-isi-6-i4190368745-s7068996603.html",
+"https://www.lazada.co.id/products/pantene-shampoo-anti-lepek-750ml-paket-isi-3-i805072640-s1137780990.html",
+"https://www.lazada.co.id/products/olay-total-effects-recycled-pack-set-lengkap-anti-aging-skincare-krim-wajah-serum-wajah-sabun-muka-i6429362811-s12201630914.html",
+"https://www.lazada.co.id/products/olay-luminous-recycled-pack-ritual-krim-pelembab-wajah-pagi-malam-pencerah-skincare-i6429346116-s12201620045.html",
+"https://www.lazada.co.id/products/olay-luminous-niacinamide-aha-krim-pelembab-brightening-skin-care-50gr-i6222724096-s11825666156.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-lengkap-luminous-niacinamide-aha-brightening-skin-care-krim-wajah-50gr-serum-wajah-30ml-i6222894831-s11825884240.html",
+"https://www.lazada.co.id/products/i6686368437.html",
+"https://www.lazada.co.id/products/i6688838783.html",
+"https://www.lazada.co.id/products/rejoice-jeju-rose-shampoo-450ml-paket-isi-3-i7065974731-s13353830033.html",
+"https://www.lazada.co.id/products/herbal-essences-argan-oil-600ml-shampoo-i7014846751-s13265952023.html",
+"https://www.lazada.co.id/products/herbal-essences-argan-oil-of-morocco-shampoo-400-ml-x2-dan-conditioner-400ml-i4160194389-s7014784867.html",
+"https://www.lazada.co.id/products/herbal-essences-clean-white-strawberry-sweet-mint-shampo-400x2-dan-conditioner-400ml-i4160206275-s7014814832.html",
+"https://www.lazada.co.id/products/herbal-essences-colour-me-happy-300ml-shampoo-x2-dan-conditioner-300ml-i4160182621-s7014802884.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-regenerist-ritual-set-lengkap-anti-aging-i5121078032-s9519554397.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-ritual-pelembab-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-i160036240-s181904936.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-lengkap-serum-perawatan-anti-aging-gratis-olay-regenerist-microsculpting-serum-mini-14gr-skincare-i848572316-s1220904280.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-lengkap-perawatan-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-i719920779-s996534453.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-lengkap-serum-regenerist-gratis-olay-regenerist-microsculpting-serum-mini-14gr-skincare-i848470612-s1220804191.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-pelembab-advanced-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-i719990076-s996526675.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-serum-perawatan-anti-aging-gratis-olay-regenerist-microsculpting-serum-mini-14gr-skincare-i848508480-s1220858172.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-perawatan-kulit-normal-i160040644-s181911638.html",
+"https://www.lazada.co.id/products/olay-regenerist-retinol-24-serum-30ml-paket-isi-2-i4188846718-s7064450650.html",
+"https://www.lazada.co.id/products/ritual-retinol-anti-aging-krim-pagi-50g-krim-malam-50g-i1676214909-s3249010714.html",
+"https://www.lazada.co.id/products/oral-b-sikat-gigi-stages-2-paket-isi-6-i3260160058-s5671626488.html",
+"https://www.lazada.co.id/products/sikat-gigi-oral-b-ultra-thin-compact-soft-3s-pack-of-2-i407134523-s449950078.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-cool-menthol-400ml-gillette-mach3-350-razor-i985896165-s1480054737.html",
+"https://www.lazada.co.id/products/downy-pelembut-pewangi-pakaian-pashmina-rose-refill-550ml-isi-1-i7236826873-s13567800133.html",
+"https://www.lazada.co.id/products/exclusive-launch-olay-skin-barrier-antioxidant-moisturizer-50gr-skin-barrier-cream-anti-aging-retinol-serum-30ml-essence-anti-aging-skin-care-i6881170819-s13038424085.html",
+"https://www.lazada.co.id/products/oral-b-sikat-gigi-toothbrush-anak-stages-2-mickey-2-4-tahun-paket-isi-6-i3260160058-s5671626488.html",
+"https://www.lazada.co.id/products/olay-total-effects-7in1-day-cream-normal-anti-aging-krim-pencerah-wajah-perawatan-kulit-50g-paket-isi-2-i7570488273.html?spm=a2o4j.searchlist.list.1.40072aa18UmM1T"]
 
 import requests
 from bs4 import BeautifulSoup 
@@ -686,7 +695,7 @@ with alive_bar(len(list_lazada),title='gathering data....') as bar:
         if len(list_stock)%90==0:
             driver.quit()
             print(list_stock)
-            driver=webdriver.Edge(options=options)
+            driver=webdriver.Chrome(options=options)
         bar()
 with alive_bar(len(list_lazada),title='validating') as bar:
     for i,j in enumerate(list_harga_sesudah):
@@ -712,5 +721,5 @@ driver.quit()
 import pandas as pd
 
 df=pd.DataFrame(data=[list_lazada,list_stock,list_harga_sebelum,list_harga_sesudah]).T
-df.to_excel('lazada_lengkap_18_8.xlsx')
+df.to_excel('lazada_lengkap_22_8.xlsx')
         

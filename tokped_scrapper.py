@@ -767,7 +767,7 @@ options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 
 list_stock=[]
@@ -788,7 +788,7 @@ with alive_bar(len(list_tokped),title='gathering data....') as bar:
         
         if len(list_stock)%100==0:
             driver.quit()
-            driver=webdriver.Edge(options=options)
+            driver=webdriver.Chrome(options=options)
             print(list_stock)
         bar()
 with alive_bar(len(list_stock),title='validating data....') as bar:
@@ -808,4 +808,4 @@ driver.quit()
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[list_tokped,list_stock]).T
-df.to_excel('tokped_18_08.xlsx')
+df.to_excel('tokped_22_08.xlsx')
