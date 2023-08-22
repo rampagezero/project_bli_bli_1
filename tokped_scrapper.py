@@ -775,29 +775,37 @@ with alive_bar(len(list_tokped),title='gathering data....') as bar:
     for i in list_tokped:
         wait=WebDriverWait(driver,20)
         driver.get(i)
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'.css-1yy88m3-unf-heading > b:nth-child(1)')))
-        soup=BeautifulSoup(driver.page_source,'html.parser')  
-        beli=soup.find('p',{'class':"css-1yy88m3-unf-heading e1qvo2ff8"}).text
-        list_stock.append(beli)
-        print(list_stock)
+        try:
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'.css-1yy88m3-unf-heading > b:nth-child(1)')))
+            soup=BeautifulSoup(driver.page_source,'html.parser')  
+            try:
+                beli=soup.find('p',{'class':"css-1yy88m3-unf-heading e1qvo2ff8"}).text
+                list_stock.append(beli)
+            except:
+                list_stock.append('')
+        except:
+                list_stock.append('')
+        
         if len(list_stock)%100==0:
             driver.quit()
             driver=webdriver.Edge(options=options)
+            print(list_stock)
         bar()
-# with alive_bar(len(list_stock),title='validating data....') as bar:
-#     for i,j in enumerate(list_stock):
-#         if j==0:
-#             print(list_tokped[i])
-#             driver.get(list_tokped[i])
-#             time.sleep(3)
-#             soup=BeautifulSoup(driver.page_source,'html.parser')
-#             try:    
-#                 beli=soup.find('p',{'class':"css-1yy88m3-unf-heading e1qvo2ff8"}).text
-#                 list_stock[i]=1
-#             except:
-#                 pass
-#         bar()
+with alive_bar(len(list_stock),title='validating data....') as bar:
+    for i,j in enumerate(list_stock):
+        if j==0:
+            print(list_tokped[i])
+            driver.get(list_tokped[i])
+            time.sleep(1)
+            soup=BeautifulSoup(driver.page_source,'html.parser')
+            try:    
+                beli=soup.find('p',{'class':"css-1yy88m3-unf-heading e1qvo2ff8"}).text
+                list_stock[i]=1
+            except:
+                pass
+        bar()
+driver.quit()           
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[list_tokped,list_stock]).T
-df.to_excel('tokped_11_08.xlsx')
+df.to_excel('tokped_18_08.xlsx')

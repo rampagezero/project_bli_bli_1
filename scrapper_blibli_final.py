@@ -716,25 +716,28 @@ options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
-
 list_stock=[]
 with alive_bar(len(list_link),title='gathering data....') as bar:
     for i in list_link:
         driver.get(i)
-        time.sleep(1)
+        try:
+            wait=WebDriverWait(driver,20)
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#pdp-gateway > div > section.pdp-action')))
+        except:
+            pass 
         soup=BeautifulSoup(driver.page_source,'html.parser')
         try:    
             beli=soup.find('button',{'class':"blu-btn b-primary btn-checkout"}).text
             list_stock.append(1)
         except:
             list_stock.append(0)
-        print(list_stock)
         if len(list_stock)%90==0:
             driver.quit()
             driver=webdriver.Edge(options=options)
+            print(list_stock)
         bar()
 with alive_bar(len(list_stock),title='validating data....') as bar:
     for i,j in enumerate(list_stock):
@@ -752,7 +755,7 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()             
 import pandas as pd
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_11_08.xlsx')
+df.to_excel('blibli_18_08.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

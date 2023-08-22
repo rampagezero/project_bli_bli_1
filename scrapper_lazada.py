@@ -601,60 +601,28 @@ list_lazada=["https://www.lazada.co.id/products/ambipur-car-lavender-2ml-i144122
 "https://www.lazada.co.id/products/gillette-mach-3-alat-cukur-razor-pisau-cukur-isi-ulang-i159982155-s181784484.html",
 "https://www.lazada.co.id/products/oral-b-sikat-gigi-all-rounder-123-medium-3s-i5847660789-s11308394175.html",
 "https://www.lazada.co.id/products/olay-total-effects-7in1-day-cream-normal-anti-aging-krim-pencerah-wajah-perawatan-kulit-50g-paket-isi-2-i7570488273.html?spm=a2o4j.searchlist.list.1.40072aa18UmM1T"]
-list_lazada_susulan=["https://www.lazada.co.id/products/olay-regenerist-recycled-pack-set-lengkap-anti-aging-skincare-krim-wajah-serum-wajah-sabun-muka-i6429354887-s12201648184.html",
-"https://www.lazada.co.id/products/pantene-shampo-anti-lepek-750ml-shampoosampo-perawatan-rambut-berminyak-membersihkan-kulit-kepala-i171106864-s201501244.html",
-"https://www.lazada.co.id/products/pantene-sampo-total-damage-care-290ml-shampoosampo-perawatan-rambut-halus-lembut-rambut-bercabang-rambut-rusak-i159927920-s181719217.html",
-"https://www.lazada.co.id/products/pantene-sampo-smooth-silky-control-400ml-shampoosampo-perawatan-rambut-halus-lembut-menjaga-kelembapan-rambut-i159925365-s181715424.html",
-"https://www.lazada.co.id/products/pantene-sampo-smooth-silky-290ml-i159951462-s181747261.html",
-"https://www.lazada.co.id/products/pantene-sampo-nature-care-fullness-life-290ml-shampoosampo-perawatan-rambut-kusam-i159951350-s181747137.html",
-"https://www.lazada.co.id/products/pantene-sampo-long-black-290ml-shampoosampo-perawatan-rambut-hitam-berkilau-alami-rambut-panjang-i159951727-s181747543.html",
-"https://www.lazada.co.id/products/pantene-sampo-hair-fall-control-900ml-i159992555-s181803572.html",
-"https://www.lazada.co.id/products/pantene-sampo-hair-fall-control-400ml-shampoosampo-perawatan-rambut-rontok-menutrisi-memperkuat-rambut-i159927952-s181719256.html",
-"https://www.lazada.co.id/products/pantene-sampo-daily-moisture-renewal-290ml-i159982016-s181784315.html",
-"https://www.lazada.co.id/products/pantene-sampo-aqua-pure-750ml-shampoosampo-tanpa-silikon-mencegah-kerusakan-rambut-i159984214-s181787766.html",
-"https://www.lazada.co.id/products/pantene-sampo-aqua-pure-400ml-i159982998-s181785714.html",
-"https://www.lazada.co.id/products/pantene-sampo-aqua-pure-200ml-shampoosampo-tanpa-silikon-mencegah-kerusakan-rambut-i159983008-s181785724.html",
-"https://www.lazada.co.id/products/pantene-sampo-anti-dandruff-290ml-i159951463-s181747262.html",
-"https://www.lazada.co.id/products/pantene-pro-v-gold-series-strong-and-thick-sampo-450-ml-i5353022485-s10520556540.html",
-"https://www.lazada.co.id/products/pantene-pro-v-gold-series-strong-thick-sampo-450-ml-pack-of-2-gratis-gold-series-conditioner-90ml-i805150662-s1137996153.html",
-"https://www.lazada.co.id/products/head-shoulders-sampo-cool-menthol-400-ml-i159925283-s181715342.html",
-"https://www.lazada.co.id/products/hs-shampo-680ml-lemon-fresh-i160036032-s181904367.html",
-"https://www.lazada.co.id/products/gillette-pisau-cukur-blue-2-disposable-isi-51-razor-i1500020781-s2820940428.html",
-"https://www.lazada.co.id/products/gillette-blue-ii-ultragrip-pivot-isi-2-i1500008845-s2820918994.html",
-"https://www.lazada.co.id/products/downy-sunrise-fresh-refill-155l-i160031027-s181890431.html",
-"https://www.lazada.co.id/products/downy-sports-fresh-refill-720ml-pack-of-4-i965790867-s1455422212.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-mystique-900-ml-i5056682507-s9391628658.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-mystique-680-ml-i5371722112-s10590126002.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml-paket-isi-3-i5436600723-s10820866743.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml-paket-isi-2-i5436624367-s10820888396.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml-i5436628328-s10820852837.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-550-ml-paket-isi-2-i5436642200-s10820854754.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-550-ml-i5436644181-s10820864510.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-145-l-paket-isi-2-i5436572958-s10820830980.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-145-l-i5436582839-s10820858704.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-900-ml-paket-isi-3-i5436640258-s10820830982.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-900-ml-i5436600726-s10820898254.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-550-ml-paket-isi-2-i5436612619-s10820910125.html",
-"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-550-ml-i5436632305-s10820904169.html",
-"https://www.lazada.co.id/products/downy-pelembut-pewangi-pakaian-floral-pink-1-l-paket-isi-3-i4211888098-s7105514408.html",
-"https://www.lazada.co.id/products/oral-b-pasta-gigi-tooth-and-gum-care-paste-paket-isi-6-i4190414031-s7068956737.html",
-"https://www.lazada.co.id/products/oral-b-fresh-clean-black-soft-3s-i954382760-s1438692310.html",
-"https://www.lazada.co.id/products/oral-b-dental-flossbenang-gigi-satin-50m-paket-isi-6-i3205916070-s5604724508.html",
-"https://www.lazada.co.id/products/oral-b-dental-flossbenang-gigi-essential-50m-paket-isi-6-i3205904224-s5604732455.html",
-"https://www.lazada.co.id/products/oral-b-bilas-mulut-rinse-prohealth-500ml-paket-isi-6-i3265150852-s5679562755.html",
-"https://www.lazada.co.id/products/oral-b-bilas-mulut-rinse-prohealth-500ml-i2571230762-s4732486933.html",
-"https://www.lazada.co.id/products/lebih-hemat-olay-set-lengkap-perawatan-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-i719920779-s996534453.html",
-"https://www.lazada.co.id/products/lebih-hemat-olay-set-lengkap-serum-perawatan-anti-aging-gratis-olay-regenerist-microsculpting-serum-mini-14gr-skincare-i848572316-s1220904280.html",
-"https://www.lazada.co.id/products/lebih-hemat-olay-paket-serum-anti-aging-skincare-i848344276-s1220552732.html",
-"https://www.lazada.co.id/products/lebih-hemat-olay-ritual-pelembab-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-i160036240-s181904936.html",
-"https://www.lazada.co.id/products/lebih-hemat-olay-regenerist-ritual-set-lengkap-anti-aging-i5121078032-s9519554397.html",
-"https://www.lazada.co.id/products/herbal-essences-smooth-golden-moringa-oil-shampoo-400-ml-x2-dan-conditioner-400ml-i4160184657-s7014828746.html",
-"https://www.lazada.co.id/products/herbal-essences-shampoo-moroccan-my-shine-300-ml-x2-dan-conditioner-300ml-i4160180644-s7014770962.html",
-"https://www.lazada.co.id/products/herbal-essences-shampoo-hello-hydration-300-ml-x2-dan-conditioner-300ml-i4160208206-s7014786713.html",
-"https://www.lazada.co.id/products/herbal-essences-shampo-kondisioner-moroccan-my-shine-300-ml-i956152832-s1441056907.html",
-"https://www.lazada.co.id/products/herbal-essences-shampo-kondisioner-hello-hydration-300-ml-i956000257-s1440728054.html",
-"https://www.lazada.co.id/products/herbal-essences-hydrate-coconut-milk-shampoo-400-ml-x2-dan-conditioner-400ml-i4160166789-s7014838437.html",
-"https://www.lazada.co.id/products/herbal-essences-colour-me-happy-300ml-shampoo-x2-dan-conditioner-300ml-i4160182621-s7014802884.html"]
+list_lazada_susulan=["https://www.lazada.co.id/products/ambipur-car-pacific-air-refill-75ml-i1441218399-s2658056078.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-kondisioner-400-ml-i633172146-s881120603.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-shampo-400-ml-i633094935-s881058150.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-shampo-400-ml-x2-i637638323-s886564742.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-volume-white-grapefruit-and-mosa-mint-shampoo-400-ml-conditioner-400-ml-i3412450667-s5857850301.html",
+"https://www.lazada.co.id/products/herbal-essences-kondisioner-colour-me-happy-300-ml-i954988120-s1439570191.html",
+"https://www.lazada.co.id/products/herbal-essences-kondisioner-hello-hydration-300-ml-i955756275-s1440458740.html",
+"https://www.lazada.co.id/products/herbal-essences-kondisioner-moroccan-my-shine-300-ml-i955986887-s1440766077.html",
+"https://www.lazada.co.id/products/herbal-essences-shampo-colour-me-happy-300-ml-i955534843-s1440242392.html",
+"https://www.lazada.co.id/products/herbal-essences-shampo-colour-me-happy-300-ml-pack-of-2-i955646134-s1440316078.html",
+"https://www.lazada.co.id/products/pantene-conditioner-miracles-collagen-repair-daily-hair-supplement-for-damage-care-150ml-i5786986479-s11243976831.html",
+"https://www.lazada.co.id/products/pantene-conditioner-miracles-collagen-repair-daily-hair-supplement-for-damage-care-300ml-i5787016079-s11244002745.html",
+"https://www.lazada.co.id/products/pantene-hair-mask-miracles-collagen-repair-weekly-hair-supplement-for-damage-care-20ml-i5787004580-s11244058053.html",
+"https://www.lazada.co.id/products/pantene-micellar-detox-and-purify-paket-shampoo-300-ml-x2-conditioner-300-ml-i5716540053-s11167746635.html",
+"https://www.lazada.co.id/products/downy-pelembut-dan-pewangi-pakaian-konsentrat-cotton-900ml-laundry-softener-paket-isi-4-i7065502097-s13353008913.html",
+"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-1-gagang-pisau-cukur-3-pisau-cukur-refill-isi-ulang-eksklusif-ecommerce-i7017540134-s13270842775.html",
+"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-5-pisau-cukur-refill-isi-ulang-eksklusif-ecommerce-i7017590029-s13270876955.html",
+"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-1-gagang-pisau-cukur-1-pisau-cukur-refill-isi-ulang-i7017586788-s13271006093.html",
+"https://www.lazada.co.id/products/baru-gillette-flexi-vibe-2-pisau-cukur-refill-isi-ulang-i7017608904-s13271032499.html",
+"https://www.lazada.co.id/products/olay-anti-aging-pelembab-total-effects-touch-of-foundation-bb-cream-spf-15-7-in-1-50g-skincarecream-wajah-glowingkrim-wajah-bpom-i159962240-s181759620.html",
+"https://www.lazada.co.id/products/downy-sunrise-fresh-refill-16l-pack-of-2-i160036237-s181904933.html"]
+
 import requests
 from bs4 import BeautifulSoup 
 from selenium import webdriver
@@ -691,8 +659,8 @@ list_harga_sebelum=[]
 list_harga_sesudah=[]
 list_rating=[]
 list_jumlah_rating=[]
-with alive_bar(len(list_lazada_susulan),title='gathering data....') as bar:
-    for i in list_lazada_susulan:
+with alive_bar(len(list_lazada),title='gathering data....') as bar:
+    for i in list_lazada:
         driver.get(i)
         # wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[4]/div/div[3]/div[2]/div/div[1]/div[15]/div')))
         # driver.execute_script("window.stop();")
@@ -714,14 +682,35 @@ with alive_bar(len(list_lazada_susulan),title='gathering data....') as bar:
             list_stock.append(beli)
         except:
              list_stock.append("")
-        print(list_stock)
+        
         if len(list_stock)%90==0:
             driver.quit()
+            print(list_stock)
             driver=webdriver.Edge(options=options)
         bar()
+with alive_bar(len(list_lazada),title='validating') as bar:
+    for i,j in enumerate(list_harga_sesudah):
+        if j=='':
+            driver.get(list_lazada[i])
+            soup=BeautifulSoup(driver.page_source,'html.parser')
+            try:
+                harga_sesudah=soup.find('span',{"class":"pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl"}).text
+                list_harga_sesudah[i]=harga_sesudah
+            except:
+                pass
+            try:
+                beli=soup.find('span',{'class':"pdp-button-text"}).text
+                list_stock[i]=beli
+            except:
+                pass
+            try:
+                harga_sebelum=soup.find('span',{'class':"pdp-price pdp-price_type_deleted pdp-price_color_lightgray pdp-price_size_xs"}).text
+                list_harga_sebelum[i]=harga_sebelum
+            except:
+                pass
 driver.quit()
 import pandas as pd
 
-df=pd.DataFrame(data=[list_lazada_susulan,list_stock,list_harga_sebelum,list_harga_sesudah]).T
-df.to_excel('lazada_lengkap_11_8_susulan.xlsx')
+df=pd.DataFrame(data=[list_lazada,list_stock,list_harga_sebelum,list_harga_sesudah]).T
+df.to_excel('lazada_lengkap_18_8.xlsx')
         
