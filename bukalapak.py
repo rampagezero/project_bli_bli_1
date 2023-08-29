@@ -909,43 +909,46 @@ options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-notifications')
 options.add_argument('--headless=new')
-# prefs = {"profile.managed_default_content_settings.images": 2}
-# options.add_experimental_option("prefs", prefs)
+prefs = {"profile.managed_default_content_settings.images": 2}
+options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Chrome(options=options)
+# driver=webdriver.Firefox(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\geckodriver.exe'))
 # driver.set_page_load_timeout(10)
-wait=WebDriverWait(driver,20)
+driver=webdriver.Chrome(options=options)
+wait=WebDriverWait(driver,10)
 list_stock=[]
 with alive_bar(len(bukalapak_link),title='gathering data....') as bar:
-    for i in bukalapak_link:
+    for i in bukalapak_link:  
         driver.get(i)
-        time.sleep(1)
-        soup=BeautifulSoup(driver.page_source,'html.parser')
-        try:    
-            beli=soup.find('button',{'class':"c-main-product__action__buy bl-button bl-button--primary bl-button--medium"}).text
-            list_stock.append(1)
+        try:
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#section-main-product > div.c-product-details-section__main > div.c-main-product__action.c-main-product__separator > div > button.c-main-product__action__buy.bl-button.bl-button--primary.bl-button--medium')))
         except:
-            list_stock.append(0)
-        
+            pass
+        soup=BeautifulSoup(driver.page_source,'html.parser') 
+        try:
+            beli=soup.find('button',{'class':"c-main-product__action__buy bl-button bl-button--primary bl-button--medium"}).text
+            list_stock.append(beli)
+        except:
+            list_stock.append('')
+        # print(list_stock)
         if len(list_stock)%100==0:
-            driver.quit()
             print(list_stock)
-            driver=webdriver.Chrome(options=options)
         bar()
 with alive_bar(len(list_stock),title='validating data....') as bar:
     for i,j in enumerate(list_stock):
-        if j==0:
-            print(bukalapak_link[i])
+        if j=='Habis':
+            print(list_stock[i])
             driver.get(bukalapak_link[i])
             time.sleep(1)
-            soup=BeautifulSoup(driver.page_source,'html.parser')
+            # soup=BeautifulSoup(driver.page_source,'html.parser')
             try:    
                 beli=soup.find('button',{'class':"c-main-product__action__buy bl-button bl-button--primary bl-button--medium"}).text
-                list_stock[i]=1
+                list_stock[i]=beli
             except:
                 pass
         bar()
+driver.quit()           
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[bukalapak_link,list_stock]).T
-df.to_excel('bukalapak_22_08.xlsx')
+df.to_excel('bukalapak_29_08.xlsx')

@@ -600,6 +600,7 @@ list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3
 "https://www.blibli.com/p/olay-serum-wajah-luminous-light-perfecting-essence-pencerah-skincare-30ml-special-edition-keith-haring-free-white-pouch/ps--OLY-60021-00405?ds=OLY-60021-00405-00001&source=MERCHANT_PAGE&sid=314bf9e6275c2534&cnc=true&pickupPointCode=PP-3035142&pid=OLY-60021-00405",
 "https://www.blibli.com/p/olay-serum-wajah-white-radiance-light-perfecting-essence-pencerah-skincare-limited-edition-30-ml/ps--OLY-60021-00339?ds=OLY-60021-00339-00001&source=MERCHANT_PAGE&sid=4ded3a92e9665915&metaData=Sa0jw%20XIAzQDKlCuUgCF1rcyVtUWHSEVrpxXbMqfGD60k3%20ABV%2FDH2PCwDL5hyNHVfpio0v83fyImViRCUjYcP1ycHsD0Gv3pU06hp78fX4FIV3TYG4eZlaHQvtHp2GSlg9DYcGal6Nha%200m5BO3EVOU8ezsgx0acDP4UsfkJzIg9%2FNtdYisrklknqHBLV61&cnc=false&pickupPointCode=PP-3035142&pid=OLY-60021-00339"
 ]
+blibli_susulan=[]
 options_1 =Options()
 options_1.set_preference('permissions.default.stylesheet', 2)
 options_1.set_preference('permissions.default.image', 2)

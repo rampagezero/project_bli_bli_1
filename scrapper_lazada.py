@@ -631,7 +631,35 @@ list_lazada_susulan=["https://www.lazada.co.id/products/oral-b-sikat-gigi-pro-he
 "https://www.lazada.co.id/products/exclusive-launch-olay-skin-barrier-antioxidant-moisturizer-50gr-skin-barrier-cream-anti-aging-retinol-serum-30ml-essence-anti-aging-skin-care-i6881170819-s13038424085.html",
 "https://www.lazada.co.id/products/oral-b-sikat-gigi-toothbrush-anak-stages-2-mickey-2-4-tahun-paket-isi-6-i3260160058-s5671626488.html",
 "https://www.lazada.co.id/products/olay-total-effects-7in1-day-cream-normal-anti-aging-krim-pencerah-wajah-perawatan-kulit-50g-paket-isi-2-i7570488273.html?spm=a2o4j.searchlist.list.1.40072aa18UmM1T"]
-
+lazada_susulan=["https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-550-ml-paket-isi-2-i5436642200-s10820854754.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml-paket-isi-2-i5436624367-s10820888396.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-900-ml-paket-isi-3-i5436600723-s10820866743.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-mystique-680-ml-i5371722112-s10590126002.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-mystique-900-ml-i5056682507-s9391628658.html",
+"https://www.lazada.co.id/products/downy-sports-fresh-refill-720ml-pack-of-4-i965790867-s1455422212.html",
+"https://www.lazada.co.id/products/downy-sunrise-fresh-refill-155l-i160031027-s181890431.html",
+"https://www.lazada.co.id/products/gillette-blue-ii-ultragrip-pivot-isi-2-i1500008845-s2820918994.html",
+"https://www.lazada.co.id/products/gillette-pisau-cukur-blue-2-disposable-isi-51-razor-i1500020781-s2820940428.html",
+"https://www.lazada.co.id/products/gillette-alat-cukur-blue-3-biru-razor-pisau-cukur-isi-2-i1500016794-s2820962398.html",
+"https://www.lazada.co.id/products/gillette-pisau-cukur-blue-3-ice-isi-2-i1500018741-s2820974031.html",
+"https://www.lazada.co.id/products/gillette-blue3-simple-2s-i1499980938-s2820942738.html",
+"https://www.lazada.co.id/products/gillette-guard-3-razor-cart-2s-i1547244267-s2946128667.html",
+"https://www.lazada.co.id/products/gillette-alat-cukur-mach-3-razor-2-refill-pisau-cukur-isi-ulang-i3205836876-s5604722284.html",
+"https://www.lazada.co.id/products/head-shoulders-sampo-clean-and-balanced-400-ml-i159925213-s181715272.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-cool-menthol-330-ml-pack-of-2-i160036245-s181904941.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-lemon-fresh-300ml-x-2-i160036244-s181904940.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-lemon-fresh-850ml-i985764134-s1479958146.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-lemon-fresh-850ml-paket-isi-2-i985816001-s1480032116.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-menthol-850ml-i985594462-s1479834217.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-menthol-850ml-paket-isi-2-i985636810-s1479894074.html",
+"https://www.lazada.co.id/products/head-shoulders-sampo-smooth-silky-400-ml-i159925284-s181715343.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-sub-zero-160-ml-paket-isi-3-i1173658792-s1857472848.html",
+"https://www.lazada.co.id/products/bundle-olay-white-radiance-essence-30ml-retinol-serum-30ml-i4840040914-s8956606305.html",
+"https://www.lazada.co.id/products/olay-regenerist-micro-sculpting-krim-malam-10gr-i4188848736-s7064496138.html",
+"https://www.lazada.co.id/products/pantene-sampo-total-damage-care-900ml-kondisioner-perawatan-rambut-halus-lembut-rambut-bercabang-rambut-rusak-i159992638-s181803655.html",
+"https://www.lazada.co.id/products/pantene-shampo-anti-lepek-290ml-i171106862-s201501242.html",
+"https://www.lazada.co.id/products/pantene-shampoo-anti-lepek-750ml-paket-isi-3-i805072640-s1137780990.html",
+"https://www.lazada.co.id/products/pantene-shampoo-hair-fall-control-1800-ml-i4644788251-s8163000782.html"]
 import requests
 from bs4 import BeautifulSoup 
 from selenium import webdriver
@@ -642,24 +670,28 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from alive_progress import alive_bar
+import logging
+from fake_useragent import UserAgent
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 # capa = DesiredCapabilities.CHROME
 # capa["pageLoadStrategy"] = "none"
 options = Options()
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.add_experimental_option('useAutomationExtension', False)
+options.add_argument('--no-sandbox')
+options.add_argument('--start-maximized')
+# options.add_argument('--start-fullscreen')
+# options.add_argument('--single-process')
+# options.add_argument('--disable-dev-shm-usage')
+# options.add_argument("--incognito")
 options.add_argument('--disable-blink-features=AutomationControlled')
-options.add_argument('--disable-notifications')
+options.add_experimental_option('useAutomationExtension', False)
+options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_argument("disable-infobars")
 prefs = {"profile.managed_default_content_settings.images": 2}
-options.add_argument('--ignore-certificate-errors')
-options.add_argument('--allow-running-insecure-content')
 options.add_experimental_option("prefs", prefs)
-# options.add_argument('--headless=new')
-# prefs = {"profile.managed_default_content_settings.images": 2}
-# options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
-# options.add_argument("--window-size=1920,1080")
 driver=webdriver.Chrome(options=options)
-# driver.set_page_load_timeout(10)
+driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})") 
 wait=WebDriverWait(driver,5)
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
@@ -668,12 +700,30 @@ list_harga_sebelum=[]
 list_harga_sesudah=[]
 list_rating=[]
 list_jumlah_rating=[]
-with alive_bar(len(list_lazada),title='gathering data....') as bar:
-    for i in list_lazada:
+time_table=[5,8,9,10,12,3]
+
+# driver.delete_all_cookies()
+with alive_bar(len(lazada_susulan),title='gathering data....') as bar:
+    for i in lazada_susulan:
         driver.get(i)
-        # wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[4]/div/div[3]/div[2]/div/div[1]/div[15]/div')))
-        # driver.execute_script("window.stop();")
-        # driver.execute_script("window.scrollTo(0, 1200)")
+        
+        try:
+            caution=driver.find_element(By.CSS_SELECTOR,'#baxia-punish > div.wrapper > div > div.bannar > div.captcha-tips > div').text
+            print(caution)
+        except:
+            pass
+        # slider=driver.find_element(By.XPATH,'//*[@id="nc_1_n1z"]')
+        # for i in range(0,100):
+        # try:
+        #     slider=driver.find_element(By.XPATH,'/html/body/div/div[2]/div/div[1]/div[2]/center/div[1]/div/div/div/span')
+        #     print('ada')
+        #     ac=ActionChains(driver=driver)
+            
+        #     for i in range(0,1000):
+        #         slider.sendKeys(Keys.ARROW_RIGHT)
+        # except:
+        #     pass
+        wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[4]/div/div[3]/div[2]/div/div[1]/div[15]/div')))
         time.sleep(1)
         soup=BeautifulSoup(driver.page_source,'html.parser')
         try:    
@@ -690,18 +740,19 @@ with alive_bar(len(list_lazada),title='gathering data....') as bar:
             beli=soup.find('span',{'class':"pdp-button-text"}).text
             list_stock.append(beli)
         except:
-             list_stock.append("")
+            list_stock.append("")
         
         if len(list_stock)%90==0:
             driver.quit()
             print(list_stock)
             driver=webdriver.Chrome(options=options)
         bar()
-with alive_bar(len(list_lazada),title='validating') as bar:
+with alive_bar(len(lazada_susulan),title='validating') as bar:
     for i,j in enumerate(list_harga_sesudah):
-        if j=='':
-            driver.get(list_lazada[i])
+        if j=='': 
+            driver.get(lazada_susulan[i])
             soup=BeautifulSoup(driver.page_source,'html.parser')
+            time.sleep(15)
             try:
                 harga_sesudah=soup.find('span',{"class":"pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl"}).text
                 list_harga_sesudah[i]=harga_sesudah
@@ -718,8 +769,8 @@ with alive_bar(len(list_lazada),title='validating') as bar:
             except:
                 pass
 driver.quit()
-import pandas as pd
 
-df=pd.DataFrame(data=[list_lazada,list_stock,list_harga_sebelum,list_harga_sesudah]).T
-df.to_excel('lazada_lengkap_22_8.xlsx')
+import pandas as pd
+df=pd.DataFrame(data=[lazada_susulan,list_stock,list_harga_sebelum,list_harga_sesudah]).T
+df.to_excel('lazada_lengkap_susulan_25_8.xlsx')
         
