@@ -150,39 +150,44 @@ options.add_argument('--disable-notifications')
 prefs = {"profile.managed_default_content_settings.images": 2}
 options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
-driver=webdriver.Edge(options=options)
+driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 from selenium.webdriver.common.action_chains import ActionChains
 list_rating=[]
 list_count=[]
+
 with alive_bar(len(list_lazada),title='gathering data....') as bar:
     for i in list_lazada:
         driver.get(i)
         ac=ActionChains(driver)
-        try:
-            slider=driver.find_element(By.XPATH,'//*[@id="nc_1_n1z"]')
-            print("ada")
-            ac.click_and_hold(slider).pause(1).move_by_offset(100,0).release().perform()
-            time.sleep(100)
-        except:
-            pass
+        # try:
+        #     slider=driver.find_element(By.XPATH,'//*[@id="nc_1_n1z"]')
+        #     print("ada")
+        #     ac.click_and_hold(slider).pause(1).move_by_offset(100,0).release().perform()
+        #     time.sleep(100)
+        # except:
+        #     pass
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#module_product_review_star_1 > div > a:nth-child(2)')))
+        
+        for i in range(0,4):
+            ac.scroll_by_amount(0,500).perform()
+            time.sleep(1)
         soup=BeautifulSoup(driver.page_source,'html.parser')
         try:
             count=soup.find('a',{'class':"pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link"}).text
-            # rr=soup.find('span',{'class':"score-average"}).text
-            # list_rating.append(rr)
+            rr=soup.find('span',{'class':"score-average"}).text
+            list_rating.append(rr)
             list_count.append(count)
         except:
-            # list_rating.append(0)
             list_count.append(0)
-        print(list_count)
-        if len(list_lazada)%100==0:
-            driver.quit()
-            driver=webdriver.Edge(options=options)
-        bar()
+            list_rating.append(0)
+        print(list_rating)
+        # if len(list_lazada)%100==0:
+        #     driver.quit()
+        #     driver=webdriver.Chrome(options=options)
+        # bar()
 import pandas as pd
-df=pd.DataFrame(data=[list_lazada,list_count]).T
-df.to_excel('rr_lazada_21_08.xlsx')
+df=pd.DataFrame(data=[list_lazada,list_count,list_rating]).T
+df.to_excel('rr_lazada_31_08.xlsx')
 #nc_1_n1z

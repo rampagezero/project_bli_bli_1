@@ -243,6 +243,18 @@ list_link=["https://www.blibli.com/p/smg-jog-solo-pantene-shampoo-anti-dandruff-
 "https://www.blibli.com/p/gillette-pisau-cukur-wanita-daisy-plus-isi-2/pc--MTA-1010275",
 "https://www.blibli.com/p/gillette-isi-ulang-vector-refill-pisau-cukur-razor-isi-2/ps--PGG-18081-00286",
 "https://www.blibli.com/p/gillette-fusion-proglide-base-pisau-cukur/ps--PGG-18081-00295"]
+import requests
+from bs4 import BeautifulSoup 
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+import time
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from alive_progress import alive_bar
+# capa = DesiredCapabilities.CHROME
+# capa["pageLoadStrategy"] = "none"
 options = Options()
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
@@ -254,8 +266,8 @@ options.add_argument('--headless=new')
 from selenium.webdriver.firefox.service import Service
 driver=webdriver.Chrome(options=options)
 # driver.set_page_load_timeout(10)
+driver.set_window_size(400,300)
 wait=WebDriverWait(driver,20)
-
 list_stock=[]
 with alive_bar(len(list_link),title='gathering data....') as bar:
     for i in list_link:
@@ -267,12 +279,11 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
             pass 
         soup=BeautifulSoup(driver.page_source,'html.parser')
         try:    
-            beli=driver.find_element(By.XPATH,'//*[@id="pdp-gateway"]/div/section[2]/div/div/div[4]/div/button[2]').text
-            if 'beli' in beli.lower():
-                list_stock.append(1)
+            beli=driver.find_element(By.CSS_SELECTOR,'div.text').text
+            list_stock.append(1)
         except:
             list_stock.append(0)
-          
+    
         if len(list_stock)%80==0:
             print(list_stock) 
             driver.quit()
@@ -294,7 +305,8 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()             
 import pandas as pd
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_non_jabo_29_08.xlsx')
+df.to_excel('blibli_non_jabo_31_08.xlsx')
+        
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

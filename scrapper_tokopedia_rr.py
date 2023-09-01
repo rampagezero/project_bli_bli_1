@@ -377,7 +377,7 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-notifications')
-# options.add_argument('--headless')
+options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
@@ -387,11 +387,11 @@ wait=WebDriverWait(driver,20)
 
 list_rating=[]
 list_count=[]
-with alive_bar(len(susulan),title='gathering data....') as bar:
-    for i in susulan:
+with alive_bar(len(list_tokopedia),title='gathering data....') as bar:
+    for i in list_tokopedia:
         driver.get(i)
         soup=BeautifulSoup(driver.page_source,'html.parser')
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'p.css-vni7t6-unf-heading:nth-child(3) > span:nth-child(2)')))
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'.items')))
         jumlah=driver.find_element(By.CSS_SELECTOR,'p.css-vni7t6-unf-heading:nth-child(3) > span:nth-child(2)')
         rating=driver.find_element(By.CSS_SELECTOR,'span.main:nth-child(3)')
         list_rating.append(rating.text)
@@ -399,5 +399,5 @@ with alive_bar(len(susulan),title='gathering data....') as bar:
         print(list_rating)
         bar()
 import pandas as pd
-df=pd.DataFrame(data=[susulan,list_rating,list_count]).T
-df.to_excel('w4_Tokped_rr_susulan.xlsx')
+df=pd.DataFrame(data=[list_tokopedia,list_rating,list_count]).T
+df.to_excel('w5_Tokped_rr.xlsx')

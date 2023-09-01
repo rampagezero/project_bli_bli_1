@@ -951,4 +951,4 @@ driver.quit()
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[bukalapak_link,list_stock]).T
-df.to_excel('bukalapak_29_08.xlsx')
+df.to_excel('bukalapak_31_08.xlsx')

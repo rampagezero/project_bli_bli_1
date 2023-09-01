@@ -804,4 +804,4 @@ driver.quit()
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[list_tokped,list_stock]).T
-df.to_excel('tokped_29_08.xlsx')
+df.to_excel('tokped_31_08.xlsx')

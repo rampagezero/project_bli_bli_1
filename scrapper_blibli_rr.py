@@ -255,7 +255,7 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-notifications')
-# options.add_argument('--headless')
+options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.firefox.service import Service
@@ -290,29 +290,36 @@ susulan=["https://www.blibli.com/p/gillette-pisau-cukur-wanita-daisy-plus-isi-2/
 "https://www.blibli.com/p/whs-sangobion-vita-tonik-250ml-bundle-2-bottles/ps--PGK-60021-00066?ds=PGK-60021-00066-00001&source=BRAND_PAGE&sid=d4aa7d5bf165a57a&cnc=true&pickupPointCode=PP-3272702&pid=PGK-60021-00066&tag=2HD"]
 list_stock=[]
 list_count=[]
-with alive_bar(len(susulan),title='gathering data....') as bar:
-    for i in susulan:
+driver.set_window_size(1200,800)
+with alive_bar(len(list_link),title='gathering data....') as bar:
+    for i in list_link:
         driver.get(i)
-        time.sleep(2)
-        soup=BeautifulSoup(driver.page_source,'html.parser')
         try:
-            rr=soup.find('div',{'class':"product-rating__decimal"}).text
-            count=soup.find('div',{'class':"product-rating__count"}).text
+            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR,'.bag-retail__container')))
+        except:
+            pass
+        try:
+            rr=driver.find_element(By.CSS_SELECTOR,'.product-rating__decimal').text
+            count=driver.find_element(By.CSS_SELECTOR,'.product-rating__count').text
             list_stock.append(rr)
             list_count.append(count)
         except:
             list_stock.append(0)
             list_count.append(0)
         print(list_stock)
-        if len(list_stock)%100==0:
+        if len(list_stock)%75==0:
+            
             driver.quit()
             driver=webdriver.Chrome(options=options)
+            driver.set_window_size(1200,800)
+            # driver.set_page_load_timeout(10)
+            wait=WebDriverWait(driver,20)
         bar()
 
 import pandas as pd
 driver.quit()
-df=pd.DataFrame(data=[susulan,list_stock,list_count]).T
-df.to_excel('hasil_rr_susulan_22_08.xlsx')
+df=pd.DataFrame(data=[list_link,list_stock,list_count]).T
+df.to_excel('hasil_rr_blibli_31_08.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})
