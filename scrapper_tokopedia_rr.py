@@ -380,8 +380,8 @@ options.add_argument('--disable-notifications')
 options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
-driver=webdriver.Chrome(options=options)
+from selenium.webdriver.chrome.service import Service
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 
@@ -389,15 +389,19 @@ list_rating=[]
 list_count=[]
 with alive_bar(len(list_tokopedia),title='gathering data....') as bar:
     for i in list_tokopedia:
-        driver.get(i)
-        soup=BeautifulSoup(driver.page_source,'html.parser')
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'.items')))
-        jumlah=driver.find_element(By.CSS_SELECTOR,'p.css-vni7t6-unf-heading:nth-child(3) > span:nth-child(2)')
-        rating=driver.find_element(By.CSS_SELECTOR,'span.main:nth-child(3)')
-        list_rating.append(rating.text)
-        list_count.append(jumlah.text)
-        print(list_rating)
+        try:
+            driver.get(i)
+            soup=BeautifulSoup(driver.page_source,'html.parser')
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'span.main:nth-child(3)')))
+            jumlah=driver.find_element(By.CSS_SELECTOR,'p.css-vni7t6-unf-heading:nth-child(3) > span:nth-child(2)')
+            rating=driver.find_element(By.CSS_SELECTOR,'span.main:nth-child(3)')
+            list_rating.append(rating.text)
+            list_count.append(jumlah.text)
+            print(list_rating)
+        except:
+            list_rating.append('')
+            list_count.append('')
         bar()
 import pandas as pd
 df=pd.DataFrame(data=[list_tokopedia,list_rating,list_count]).T
-df.to_excel('w5_Tokped_rr.xlsx')
+df.to_excel('w1_09_Tokped_rr.xlsx')

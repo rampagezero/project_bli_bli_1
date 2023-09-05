@@ -911,10 +911,10 @@ options.add_argument('--disable-notifications')
 options.add_argument('--headless=new')
 prefs = {"profile.managed_default_content_settings.images": 2}
 options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.chrome.service import Service
 # driver=webdriver.Firefox(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\geckodriver.exe'))
 # driver.set_page_load_timeout(10)
-driver=webdriver.Chrome(options=options)
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 wait=WebDriverWait(driver,10)
 list_stock=[]
 with alive_bar(len(bukalapak_link),title='gathering data....') as bar:
@@ -949,6 +949,5 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
         bar()
 driver.quit()           
 import pandas as pd
-driver.quit()
 df=pd.DataFrame(data=[bukalapak_link,list_stock]).T
-df.to_excel('bukalapak_31_08.xlsx')
+df.to_excel('bukalapak_5_09.xlsx')

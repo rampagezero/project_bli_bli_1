@@ -139,6 +139,54 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from alive_progress import alive_bar
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+caps = DesiredCapabilities().CHROME
+lazada_susulan=["https://www.lazada.co.id/products/ambipur-car-aqua-ultra-control-75ml-i1441222392-s2658062009.html",
+"https://www.lazada.co.id/products/ambipur-car-fresh-cool-ultra-control-i1441200693-s2658000886.html",
+"https://www.lazada.co.id/products/ambipur-car-vanilla-bouquet-ultra-control-75ml-i1441234305-s2658046536.html",
+"https://www.lazada.co.id/products/ambipur-car-fresh-and-light-ultra-control-75ml-i1441238226-s2658038779.html",
+"https://www.lazada.co.id/products/ambipur-car-vanilla-bouquet-refill-i1441230292-s2658030274.html",
+"https://www.lazada.co.id/products/ambipur-car-aqua-refill-75ml-i1441248059-s2658056079.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-sunrise-fresh-15-l-paket-isi-3-i4805198301-s8822088842.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-mystique-145-l-paket-isi-3-i4805118993-s8822092981.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-french-lavender-145-l-paket-isi-3-i6068222210-s11638138773.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-fresh-bouquet-145-l-paket-isi-3-i5436636272-s10820862716.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-adorable-bouquet-145-l-paket-isi-3-i5436670016-s10820906158.html",
+"https://www.lazada.co.id/products/downy-passion-refill-720ml-pack-of-4-i963656005-s1453010477.html",
+"https://www.lazada.co.id/products/downy-sunrise-fresh-refill-800ml-paket-isi-3-i160034505-s181900788.html",
+"https://www.lazada.co.id/products/downy-pewangi-dan-pelembut-pakaian-konsentrat-daring-145-l-paket-isi-3-i4805202182-s8822120473.html",
+"https://www.lazada.co.id/products/gillette-blue-ii-plus-elastomer-handle-disposable-sensitive-razor-10s-paket-isi-2-i5828624448-s11288406748.html",
+"https://www.lazada.co.id/products/gillette-pisau-cukur-silet-london-bridge-20-box-i4188394485-s7063678065.html",
+"https://www.lazada.co.id/products/gillette-blue-ii-plus-elastomer-handle-disposable-sensitive-10s-free-gillette-standee-i160040608-s181911602.html",
+"https://www.lazada.co.id/products/gillette-alat-cukur-fusion-proglide-isi-4-refill-pisau-cukur-isi-ulang-paket-isi-2-i3205878361-s5604712498.html",
+"https://www.lazada.co.id/products/gillette-shaving-foam-krim-alat-cukur-lemon-lime-175g-shaving-cream-paket-isi-2-i3204984214-s5603574290.html",
+"https://www.lazada.co.id/products/gillette-shaving-foam-krim-alat-cukur-menthol-175g-shaving-cream-paket-isi-2-i3205864705-s5604696928.html",
+"https://www.lazada.co.id/products/gillette-alat-cukur-mach-3-isi-4-refill-pisau-cukur-isi-ulang-paket-isi-2-i3205868476-s5604676945.html",
+"https://www.lazada.co.id/products/gillette-fusion5-pisau-cukur-isi-ulang-razor-alat-cukur-i5786710627-s11243670097.html",
+"https://www.lazada.co.id/products/gillette-cartridge-vector-isi-4-i159973954-s181773064.html",
+"https://www.lazada.co.id/products/gillette-alat-cukur-blue-2-flexi-razor-pisau-cukur-isi-15-i5786704014-s11243620399.html",
+"https://www.lazada.co.id/products/gillette-mach3-turbo-4s-refill-isi-ulang-pisau-alat-cukur-i1500050259-s2820924664.html",
+"https://www.lazada.co.id/products/gillette-gel-cool-fusion-proglide-195gr-krim-cukur-i1500008844-s2820966117.html",
+"https://www.lazada.co.id/products/beli-3-promo-spesial-head-shoulders-cool-menthol-shampoo-400ml-perawatan-rambut-kulit-kepala-shamposampo-anti-ketombe-i160030857-s181890148.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-lemon-fresh-850ml-paket-isi-3-i985866392-s1480044295.html",
+"https://www.lazada.co.id/products/head-shoulders-shampoo-smooth-and-silky-400-ml-paket-isi-3-i5829986114-s11289650525.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-clean-white-strawberry-sweet-mint-shampo-400-ml-kondisioner-i637782809-s886824837.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-repair-argan-oil-of-morocco-shampo-400-ml-kondisioner-i637844345-s886892790.html",
+"https://www.lazada.co.id/products/herbal-essences-clean-white-strawberry-sweet-mint-shampo-400x2-dan-conditioner-400ml-i4160206275-s7014814832.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-clean-white-strawberry-sweet-mint-shampo-400-ml-x2-i637628966-s886576500.html",
+"https://www.lazada.co.id/products/herbal-essences-colour-me-happy-300ml-shampoo-x2-dan-conditioner-300ml-i4160182621-s7014802884.html",
+"https://www.lazada.co.id/products/herbal-essences-shampoo-hello-hydration-300-ml-x2-dan-conditioner-300ml-i4160208206-s7014786713.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-hydrate-coconut-milk-shampo-400-ml-kondisioner-i637822592-s886882437.html",
+"https://www.lazada.co.id/products/herbal-essences-biorenew-smooth-golden-moringa-oil-shampo-400-ml-kondisioner-i637638980-s886582511.html",
+"https://www.lazada.co.id/products/herbal-essences-shampo-kondisioner-moroccan-my-shine-300-ml-i956152832-s1441056907.html",
+"https://www.lazada.co.id/products/herbal-essences-smooth-golden-moringa-oil-shampoo-400-ml-x2-dan-conditioner-400ml-i4160184657-s7014828746.html",
+"https://www.lazada.co.id/products/herbal-essences-argan-oil-shampoo-400-ml-dan-white-strawberry-400ml-dan-grapefruit-400ml-i4160192379-s7014846162.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-perawatan-anti-aging-skincare-cream-wajah-glowing-krim-wajah-bpom-i160036241-s181904937.html",
+"https://www.lazada.co.id/products/lebih-hemat-olay-set-serum-perawatan-anti-aging-gratis-olay-regenerist-microsculpting-serum-mini-14gr-skincare-i848508480-s1220858172.html",
+"https://www.lazada.co.id/products/i5520674565.html"]
+caps["pageLoadStrategy"] = "none" 
 # capa = DesiredCapabilities.CHROME
 # capa["pageLoadStrategy"] = "none"
 options = Options()
@@ -146,33 +194,32 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-notifications')
+options.add_argument("disable-quic")
+options.add_argument("--ignore-certificate-error")
+options.add_argument("--ignore-ssl-errors")
+options.page_load_strategy = 'none'
+# PROXY = "182.253.223.140:80"
+# options.add_argument('--proxy-server=%s' % PROXY)
 # options.add_argument('--headless')
-prefs = {"profile.managed_default_content_settings.images": 2}
-options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
-driver=webdriver.Chrome(options=options)
+# prefs = {"profile.managed_default_content_settings.images": 2}
+# options.add_experimental_option("prefs", prefs)
+from selenium.webdriver.chrome.service import Service
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 from selenium.webdriver.common.action_chains import ActionChains
 list_rating=[]
 list_count=[]
 
-with alive_bar(len(list_lazada),title='gathering data....') as bar:
-    for i in list_lazada:
+with alive_bar(len(lazada_susulan),title='gathering data....') as bar:
+    for i in lazada_susulan:
+        driver.set_page_load_timeout(4)
+        time.sleep(10)
         driver.get(i)
         ac=ActionChains(driver)
-        # try:
-        #     slider=driver.find_element(By.XPATH,'//*[@id="nc_1_n1z"]')
-        #     print("ada")
-        #     ac.click_and_hold(slider).pause(1).move_by_offset(100,0).release().perform()
-        #     time.sleep(100)
-        # except:
-        #     pass
-        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#module_product_review_star_1 > div > a:nth-child(2)')))
-        
-        for i in range(0,4):
-            ac.scroll_by_amount(0,500).perform()
-            time.sleep(1)
+        for i in range(0,6):
+            ac.scroll_by_amount(0,350).perform()
+            time.sleep(2)
         soup=BeautifulSoup(driver.page_source,'html.parser')
         try:
             count=soup.find('a',{'class':"pdp-link pdp-link_size_s pdp-link_theme_blue pdp-review-summary__link"}).text
@@ -188,6 +235,6 @@ with alive_bar(len(list_lazada),title='gathering data....') as bar:
         #     driver=webdriver.Chrome(options=options)
         # bar()
 import pandas as pd
-df=pd.DataFrame(data=[list_lazada,list_count,list_rating]).T
-df.to_excel('rr_lazada_31_08.xlsx')
+df=pd.DataFrame(data=[lazada_susulan,list_count,list_rating]).T
+df.to_excel('rr_lazada_5_09_susulan.xlsx')
 #nc_1_n1z

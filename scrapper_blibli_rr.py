@@ -258,8 +258,9 @@ options.add_argument('--disable-notifications')
 options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
-driver=webdriver.Chrome(options=options)
+from selenium.webdriver.chrome.service import Service
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
+
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 susulan=["https://www.blibli.com/p/gillette-pisau-cukur-wanita-daisy-plus-isi-2/pc--MTA-1010275",
@@ -310,7 +311,7 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
         if len(list_stock)%75==0:
             
             driver.quit()
-            driver=webdriver.Chrome(options=options)
+            driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
             driver.set_window_size(1200,800)
             # driver.set_page_load_timeout(10)
             wait=WebDriverWait(driver,20)
@@ -319,7 +320,7 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
 import pandas as pd
 driver.quit()
 df=pd.DataFrame(data=[list_link,list_stock,list_count]).T
-df.to_excel('hasil_rr_blibli_31_08.xlsx')
+df.to_excel('hasil_rr_blibli_4_09.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

@@ -672,25 +672,21 @@ from selenium.webdriver.common.by import By
 from alive_progress import alive_bar
 import logging
 from fake_useragent import UserAgent
-
+from selenium.webdriver.chrome.service import Service
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-# capa = DesiredCapabilities.CHROME
-# capa["pageLoadStrategy"] = "none"
+
 options = Options()
 options.add_argument('--no-sandbox')
 options.add_argument('--start-maximized')
-# options.add_argument('--start-fullscreen')
-# options.add_argument('--single-process')
-# options.add_argument('--disable-dev-shm-usage')
-# options.add_argument("--incognito")
+
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_experimental_option('useAutomationExtension', False)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_argument("disable-infobars")
 prefs = {"profile.managed_default_content_settings.images": 2}
 options.add_experimental_option("prefs", prefs)
-driver=webdriver.Chrome(options=options)
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})") 
 wait=WebDriverWait(driver,5)
 from selenium.webdriver.common.keys import Keys
@@ -701,30 +697,20 @@ list_harga_sesudah=[]
 list_rating=[]
 list_jumlah_rating=[]
 time_table=[5,8,9,10,12,3]
-
+import numpy as np
 # driver.delete_all_cookies()
-with alive_bar(len(lazada_susulan),title='gathering data....') as bar:
-    for i in lazada_susulan:
+with alive_bar(len(list_lazada),title='gathering data....') as bar:
+    for i in list_lazada:
         driver.get(i)
-        
+        soup=BeautifulSoup(driver.page_source,'html.parser')
         try:
-            caution=driver.find_element(By.CSS_SELECTOR,'#baxia-punish > div.wrapper > div > div.bannar > div.captcha-tips > div').text
-            print(caution)
+            time.sleep(3)
+            slider=driver.find_element(By.XPATH,'/html/body/div/div[2]/div/div[1]/div[2]/center/div[1]/div/div/div/span')
+            ac=ActionChains(driver)
+            ac.move_to_element(to_element=slider).drag_and_drop_by_offset(slider,300,0).perform()
         except:
             pass
-        # slider=driver.find_element(By.XPATH,'//*[@id="nc_1_n1z"]')
-        # for i in range(0,100):
-        # try:
-        #     slider=driver.find_element(By.XPATH,'/html/body/div/div[2]/div/div[1]/div[2]/center/div[1]/div/div/div/span')
-        #     print('ada')
-        #     ac=ActionChains(driver=driver)
-            
-        #     for i in range(0,1000):
-        #         slider.sendKeys(Keys.ARROW_RIGHT)
-        # except:
-        #     pass
         wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[4]/div/div[3]/div[2]/div/div[1]/div[15]/div')))
-        time.sleep(1)
         soup=BeautifulSoup(driver.page_source,'html.parser')
         try:    
             harga_sebelum=soup.find('span',{'class':"pdp-price pdp-price_type_deleted pdp-price_color_lightgray pdp-price_size_xs"}).text
@@ -745,14 +731,14 @@ with alive_bar(len(lazada_susulan),title='gathering data....') as bar:
         if len(list_stock)%90==0:
             driver.quit()
             print(list_stock)
-            driver=webdriver.Chrome(options=options)
+            driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
         bar()
-with alive_bar(len(lazada_susulan),title='validating') as bar:
+with alive_bar(len(list_lazada),title='validating') as bar:
     for i,j in enumerate(list_harga_sesudah):
         if j=='': 
-            driver.get(lazada_susulan[i])
+            driver.get(list_lazada[i])
+            time.sleep(1)
             soup=BeautifulSoup(driver.page_source,'html.parser')
-            time.sleep(15)
             try:
                 harga_sesudah=soup.find('span',{"class":"pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl"}).text
                 list_harga_sesudah[i]=harga_sesudah
@@ -771,6 +757,6 @@ with alive_bar(len(lazada_susulan),title='validating') as bar:
 driver.quit()
 
 import pandas as pd
-df=pd.DataFrame(data=[lazada_susulan,list_stock,list_harga_sebelum,list_harga_sesudah]).T
-df.to_excel('lazada_lengkap_susulan_25_8.xlsx')
+df=pd.DataFrame(data=[list_lazada,list_stock,list_harga_sebelum,list_harga_sesudah]).T
+df.to_excel('lazada_lengkap_1_9.xlsx')
         

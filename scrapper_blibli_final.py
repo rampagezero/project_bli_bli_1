@@ -611,8 +611,8 @@ options.add_argument('--disable-notifications')
 options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
-driver=webdriver.Chrome(options=options)
+from selenium.webdriver.chrome.service import Service
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 # driver.set_page_load_timeout(10)
 driver.set_window_size(400,300)
 wait=WebDriverWait(driver,20)
@@ -635,7 +635,7 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
         if len(list_stock)%80==0:
             print(list_stock) 
             driver.quit()
-            driver=webdriver.Chrome(options=options)
+            driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
         bar()
 with alive_bar(len(list_stock),title='validating data....') as bar:
     for i,j in enumerate(list_stock):
@@ -653,7 +653,7 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()             
 import pandas as pd
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_31_08.xlsx')
+df.to_excel('blibli_5_09.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

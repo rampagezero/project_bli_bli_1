@@ -765,8 +765,8 @@ options.add_argument('--headless=new')
 # options.add_experimental_option("prefs", prefs)
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.firefox.service import Service
-driver=webdriver.Chrome(options=options)
+from selenium.webdriver.chrome.service import Service
+driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,10)
 list_stock=[]
@@ -799,9 +799,8 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
                 list_stock[i]=beli
             except:
                 pass
-        bar()
-driver.quit()           
+        bar()  
+driver.quit()    
 import pandas as pd
-driver.quit()
 df=pd.DataFrame(data=[list_tokped,list_stock]).T
-df.to_excel('tokped_31_08.xlsx')
+df.to_excel('tokped_5_09.xlsx')
