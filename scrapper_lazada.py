@@ -759,4 +759,3 @@ driver.quit()
 import pandas as pd
 df=pd.DataFrame(data=[list_lazada,list_stock,list_harga_sebelum,list_harga_sesudah]).T
 df.to_excel('lazada_lengkap_1_9.xlsx')
-        
