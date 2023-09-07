@@ -950,4 +950,4 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()           
 import pandas as pd
 df=pd.DataFrame(data=[bukalapak_link,list_stock]).T
-df.to_excel('bukalapak_6_09.xlsx')
+df.to_excel('bukalapak_7_09.xlsx')
