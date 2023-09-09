@@ -1,3 +1,4 @@
+# def blibli_scraper():        
 list_link=["https://www.blibli.com/p/head-shoulders-lemon-fresh-shampoo-850-ml-3-pcs/pc--MTA-6500814",
 "https://www.blibli.com/p/head-shoulders-cool-menthol-shampoo-850-ml-3-pcs/pc--MTA-6500774",
 "https://www.blibli.com/p/olay-total-effects-whip-active-moisturizer-krim-50-g/ps--OLY-60021-00175",
@@ -653,7 +654,24 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()             
 import pandas as pd
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_7_09.xlsx')
-        
+df.to_excel('blibli_9_09_17.xlsx')
+
+# from tokped_scrapper import tokped_scrapper
+# import multiprocessing
+# import datetime
+# blibli_scraper()
+# tokped_scrapper()
+# print('done!!')
+# if __name__=="__main__":
+#     print(datetime.datetime.now())
+#     p1=multiprocessing.Process(target=blibli_scraper)
+#     p2=multiprocessing.Process(target=tokped_scrapper)
+#     p1.start()
+#     p2.start()
+#     p1.join()
+#     p2.join()
+#     print('task done!!')
+#     print(datetime.datetime.now())
+
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

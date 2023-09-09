@@ -1,3 +1,5 @@
+
+# def tokped_scrapper():
 list_tokped=["https://tokopedia.com/pgofficialstore/vicks-balsem-vaporub-10-gram",
 "https://tokopedia.com/pgofficialstore/vicks-balsem-vaporub-50-gram",
 "https://tokopedia.com/pgofficialstore/olay-base-body-lotion-75ml",
@@ -803,4 +805,10 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()    
 import pandas as pd
 df=pd.DataFrame(data=[list_tokped,list_stock]).T
-df.to_excel('tokped_7_09.xlsx')
+df.to_excel('tokped_9_09_17.xlsx')
+# import schedule
+# import time
+# schedule.every().day.at("15:00").do(tokped_scrapper)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)

@@ -307,7 +307,7 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
 driver.quit()             
 import pandas as pd
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_non_jabo_7_09.xlsx')
+df.to_excel('blibli_non_jabo_8_09.xlsx')
         
         
 

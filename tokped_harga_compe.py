@@ -73,4 +73,4 @@ with alive_bar(len(list_link),title='gathering price') as bar:
 driver.quit()
 import pandas as pd
 df=pd.DataFrame(data=[list_link,list_price]).T
-df.to_excel('price_compe_tokped.xlsx')
+df.to_excel('price_compe_tokped_08_09.xlsx')
