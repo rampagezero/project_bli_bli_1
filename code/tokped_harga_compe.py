@@ -66,11 +66,16 @@ list_price=[]
 with alive_bar(len(list_link),title='gathering price') as bar:
     for i in list_link:
         driver.get(i)
-        wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR,'.price')))
-        price=driver.find_element(By.CSS_SELECTOR,'.price').text
-        list_price.append(price)
+        try:
+            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR,'.price')))
+            price=driver.find_element(By.CSS_SELECTOR,'.price').text
+            list_price.append(price)
+        except:
+            list_price.append(" ")
         bar()
 driver.quit()
 import pandas as pd
+import datetime
+y=datetime.date.today()
 df=pd.DataFrame(data=[list_link,list_price]).T
-df.to_excel('price_compe_tokped_08_09.xlsx')
+df.to_excel(f'price_compe_tokped_{y}.xlsx')

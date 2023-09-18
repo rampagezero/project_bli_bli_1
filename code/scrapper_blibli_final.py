@@ -637,6 +637,7 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
             print(list_stock) 
             driver.quit()
             driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
+            driver.set_window_size(400,300)
         bar()
 with alive_bar(len(list_stock),title='validating data....') as bar:
     for i,j in enumerate(list_stock):
@@ -653,25 +654,17 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
         bar()
 driver.quit()             
 import pandas as pd
+import datetime
+y=datetime.date.today()
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_9_09_17.xlsx')
-
+df.to_excel(f'blibli_{y}.xlsx')
 # from tokped_scrapper import tokped_scrapper
-# import multiprocessing
-# import datetime
-# blibli_scraper()
-# tokped_scrapper()
-# print('done!!')
-# if __name__=="__main__":
-#     print(datetime.datetime.now())
-#     p1=multiprocessing.Process(target=blibli_scraper)
-#     p2=multiprocessing.Process(target=tokped_scrapper)
-#     p1.start()
-#     p2.start()
-#     p1.join()
-#     p2.join()
-#     print('task done!!')
-#     print(datetime.datetime.now())
-
+# import schedule
+# import time
+# schedule.every().day.at("15:00").do(blibli_scraper)
+# schedule.every().do()
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)     
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

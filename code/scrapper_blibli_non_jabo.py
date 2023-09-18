@@ -306,9 +306,10 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
         bar()
 driver.quit()             
 import pandas as pd
+import datetime
+y=datetime.date.today()
 df=pd.DataFrame(data=[list_link,list_stock]).T
-df.to_excel('blibli_non_jabo_8_09.xlsx')
-        
+df.to_excel(f'blibli_non_jabo_{y}.xlsx')
         
 
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

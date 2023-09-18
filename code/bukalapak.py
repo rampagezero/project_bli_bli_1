@@ -948,6 +948,8 @@ with alive_bar(len(list_stock),title='validating data....') as bar:
                 pass
         bar()
 driver.quit()           
+import datetime
+y=datetime.date.today()
 import pandas as pd
 df=pd.DataFrame(data=[bukalapak_link,list_stock]).T
-df.to_excel('bukalapak_8_09.xlsx')
+df.to_excel(f'bukalapak_{y}.xlsx')

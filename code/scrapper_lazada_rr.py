@@ -190,21 +190,25 @@ caps["pageLoadStrategy"] = "none"
 # capa = DesiredCapabilities.CHROME
 # capa["pageLoadStrategy"] = "none"
 options = Options()
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.add_experimental_option('useAutomationExtension', False)
-options.add_argument('--disable-blink-features=AutomationControlled')
-options.add_argument('--disable-notifications')
-options.add_argument("disable-quic")
-options.add_argument("--ignore-certificate-error")
-options.add_argument("--ignore-ssl-errors")
-options.page_load_strategy = 'none'
+# options.add_experimental_option("excludeSwitches", ["enable-automation"])
+# options.add_experimental_option('useAutomationExtension', False)
+# options.add_argument('--disable-blink-features=AutomationControlled')
+# options.add_argument('--disable-notifications')
+# options.add_argument("disable-quic")
+# options.add_argument("--ignore-certificate-error")
+# options.add_argument("--ignore-ssl-errors")
+# options.page_load_strategy = 'none'
 # PROXY = "182.253.223.140:80"
 # options.add_argument('--proxy-server=%s' % PROXY)
 # options.add_argument('--headless')
-# prefs = {"profile.managed_default_content_settings.images": 2}
-# options.add_experimental_option("prefs", prefs)
-from selenium.webdriver.chrome.service import Service
-driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
+from selenium.webdriver.firefox import firefox_profile
+prefs = {"profile.managed_default_content_settings.images": 2}
+options.add_experimental_option("prefs", prefs)
+firefox_profile.set_preference('permissions.default.image', 2)
+firefox_profile.set_preference('dom.ipc.plugins.enabled.libflashplayer.so', 'false')
+
+from selenium.webdriver.firefox.service import Service
+driver=webdriver.Firefox(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\geckodriver-v0.33.0-win64\geckodriver.exe'),options=options,firefox_profile=firefox_profile)
 # driver.set_page_load_timeout(10)
 wait=WebDriverWait(driver,20)
 from selenium.webdriver.common.action_chains import ActionChains

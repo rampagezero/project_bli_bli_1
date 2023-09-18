@@ -404,4 +404,4 @@ with alive_bar(len(list_tokopedia),title='gathering data....') as bar:
         bar()
 import pandas as pd
 df=pd.DataFrame(data=[list_tokopedia,list_rating,list_count]).T
-df.to_excel('w1_09_Tokped_rr.xlsx')
+df.to_excel('w3_09_Tokped_rr.xlsx')
