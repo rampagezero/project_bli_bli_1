@@ -675,11 +675,9 @@ from fake_useragent import UserAgent
 from selenium.webdriver.chrome.service import Service
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-
 options = Options()
 options.add_argument('--no-sandbox')
 options.add_argument('--start-maximized')
-
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_experimental_option('useAutomationExtension', False)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
@@ -758,4 +756,4 @@ driver.quit()
 
 import pandas as pd
 df=pd.DataFrame(data=[list_lazada,list_stock,list_harga_sebelum,list_harga_sesudah]).T
-df.to_excel('lazada_lengkap_1_9.xlsx')
+df.to_excel('lazada_lengkap_2_9.xlsx')

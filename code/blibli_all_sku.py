@@ -42,9 +42,10 @@ for page in range(0,21):
     for j in y:
         list_id.append(j.get('id'))
     for j in x:
-        list_nama.append(j.get('alt'))
-    set_list=set(list_nama)
-    print(set_list)
-    print(len(set_list))
-    print(list_id)
-    print(len(list_id))
+        nama=j.get('alt')
+        nama=str(nama).lower().replace('(','').replace(')','').replace('\xa0','').replace('&','').replace(':','').replace(',','').replace('.',' ').replace('[','').replace(']','').replace('-','').replace('+','').replace('  ',' ').strip()
+        list_nama.append(nama)
+    print(list_nama)
+    front='https://www.blibli.com/p/'
+    
+    

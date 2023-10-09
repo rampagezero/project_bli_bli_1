@@ -377,7 +377,7 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-notifications')
-options.add_argument('--headless=new')
+# options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.chrome.service import Service
@@ -404,4 +404,4 @@ with alive_bar(len(list_tokopedia),title='gathering data....') as bar:
         bar()
 import pandas as pd
 df=pd.DataFrame(data=[list_tokopedia,list_rating,list_count]).T
-df.to_excel('w4_09_Tokped_rr.xlsx')
+df.to_excel('w1_10_Tokped_rr.xlsx')

@@ -255,7 +255,7 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-notifications')
-options.add_argument('--headless=new')
+# options.add_argument('--headless=new')
 # prefs = {"profile.managed_default_content_settings.images": 2}
 # options.add_experimental_option("prefs", prefs)
 from selenium.webdriver.chrome.service import Service
@@ -316,11 +316,11 @@ with alive_bar(len(list_link),title='gathering data....') as bar:
             # driver.set_page_load_timeout(10)
             wait=WebDriverWait(driver,20)
         bar()
-
 import pandas as pd
+import datetime
+y=datetime.date.today()
 driver.quit()
 df=pd.DataFrame(data=[list_link,list_stock,list_count]).T
-df.to_excel('w4_09_Blibli_rr.xlsx')
+df.to_excel(f'Blibli_rr_{y}.xlsx')
         
-
 # driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.53 Safari/537.36'})

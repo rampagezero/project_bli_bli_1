@@ -57,7 +57,7 @@ list_link=["https://tokopedia.com/pgofficialstore/downy-pewangi-dan-pelembut-pak
 "https://tokopedia.com/pgofficialstore/rejoice-shampoo-rich-halus-lembut-600-ml",
 "https://tokopedia.com/pgofficialstore/rejoice-shampoo-rich-halus-lembut-600-ml-paket-isi-2"]
 options = Options()
-options.add_argument('--headless=new')
+# options.add_argument('--headless=new')
 from selenium.webdriver.chrome.service import Service
 driver=webdriver.Chrome(service=Service(r'D:\Python Scripts\project_scraping_blibli-Master\chromedriver.exe'),options=options)
 # driver.set_page_load_timeout(10)
